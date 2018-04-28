@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>
-			Crafted By Pam
+			Amateur Creatives
 		</title>
 		<?php wp_head(); ?>
 	</head>
