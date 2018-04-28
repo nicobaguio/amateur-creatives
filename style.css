@@ -1,0 +1,138 @@
+div.header-logo {
+    margin-top: -150px;
+}
+
+img.header-logo {
+    width: 220px;
+    height: 220px;
+}
+
+div.banner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 270px;
+    background-image: url('header.png')
+}
+
+div.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+div.blog-container {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div.blog-title h1.title {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 3.75em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div.metadata p {
+    padding: 5px 10px;
+    background-color: #D9D9D9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Inconsolota', monospace;
+}
+
+div.blog-text {
+    margin-top: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.blog-text p {
+    padding-left: 25%;
+    padding-right: 25%;
+    font-family: 'Lora', serif;
+    font-size: 0.75em;
+    line-height: 18pt;
+}
+
+div.blog-text h2 {
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+img.blog-image {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+blockquote.blockquote {
+    vertical-align: center;
+}
+
+blockquote.blockquote>p {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 20pt;
+    text-align: center;
+    line-height: 25pt;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+img.alignleft {
+    margin: 0px 20px;
+    float: left;
+    max-width: 40%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+img.alignright {
+    margin: 0px 20px;
+    float: right;
+}
+
+img.aligncenter {
+    height: 100%!important;
+    width: 100%!important;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.col-xs-12,
+div.col-12 {
+    padding: 0px;
+}
+
+div.col-lg-2 {
+    padding: 0px;
+}
+
+.pre-footer {
+    background-color: #F7F7F7;
+}
+@media (max-width: 425px) {
+    img.blog-image {
+        height: 100%!important;
+        width: 100%!important;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
