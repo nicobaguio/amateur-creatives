@@ -24,6 +24,11 @@ img.header-logo {
 	/*max-width: 50%;*/
 }
 
+#headshot {
+	height: auto;
+	width: 33%;
+}
+
 div.banner {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -142,10 +147,11 @@ div.col-lg-2 {
 }
 
 @media (max-width: 425px) {
-	img.blog-image {
-		height: 100%!important;
-		width: 100%!important;
+	img.blog-image, img#headshot {
+		width: 70%!important;
 		padding-left: 0px;
 		padding-right: 0px;
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 }
