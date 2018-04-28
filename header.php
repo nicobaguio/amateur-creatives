@@ -9,9 +9,7 @@
 	</head>
 	<body id="blogpost">
 		<div class="container-fluid">
-			<header class="header-container">
-				<div class="banner"></div>
-				<div class="header-logo text-center">
-					<img src="/static/header-logo.png" class="header-logo">
-				</div>
+			<header class="row header-container">
+				<div class="row-fluid banner"></div>
+				<img src="<?php bloginfo('template_directory')?>/images/homepage_circle-logo-small.png" class="header-logo">
 			</header>
