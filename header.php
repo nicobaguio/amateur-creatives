@@ -11,5 +11,7 @@
 		<div class="container-fluid">
 			<header class="row header-container">
 				<div class="row-fluid banner" style="background-image: url('<?php echo get_header_image(); ?>')"></div>
-				<img src="<?php bloginfo('template_directory')?>/images/homepage_circle-logo-small.png" class="header-logo">
+				<?php $custom_logo_id = get_theme_mod( 'custom_logo' ) ?>
+				<?php $logo = wp_get_attachment_image_src( $custom_logo_id, 'full'); ?>
+				<img  class="header-logo" src="<?php echo $logo[0] ?>">
 			</header>
