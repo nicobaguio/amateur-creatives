@@ -7,6 +7,9 @@ Author: Nico Baguio
 Author URI: www.nicobaguio.com
 */
 
+@import url('https://use.typekit.net/vud4jjs.css');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 body {
 	overflow-x: hidden;
 }
@@ -26,7 +29,7 @@ img.header-logo {
 
 #headshot {
 	height: auto;
-	width: 33%;
+	width: 100%;
 }
 
 div.banner {
@@ -112,12 +115,12 @@ blockquote.blockquote > p {
 	letter-spacing: 1px;
 }
 
-h2 {
+/*h2 {
 	font-family: 'Karla', sans-serif;
 	font-weight: 700;
 	letter-spacing: -1px;
 }
-
+*/
 img.alignleft {
 	margin: 0px 20px;
 	float: left;
@@ -146,6 +149,97 @@ div.col-lg-2 {
 	padding: 0px;
 }
 
+.typed, .index-intro > p {
+	font-family: 'din-2014';
+}
+
+.index-intro {
+	width: 100%;
+	margin-top: 45%;
+}
+
+.index-intro > p {
+	font-size: 3em;
+	line-height: 55px;
+	letter-spacing: 0px;
+	font-weight: 300;
+	white-space: nowrap;
+}
+
+.typed {
+	font-weight: 600;
+	border-bottom: 5px #F0DB76 solid;
+}
+
+.latest-blogposts {
+	margin-top: -1px;
+	background-image: url('./images/homepage_blog-bg.jpg');
+	width: 100%;
+	margin-left: 0px!important;
+	margin-right: 0px!important;
+}
+
+.latest-blogposts > h1 {
+	font-family: 'good-kitty';
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 55px;
+	padding-bottom: 55px;
+	color: #CE4D52;
+	width: 100%;
+}
+
+.latest-blogposts > p#all-posts {
+	font-family: 'din-2014';
+	font-weight: 600;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	margin: 75px 0px;
+}
+
+.latest-blogposts > p#all-posts > a {
+	color: white;
+	background-color: #E5725D;
+	padding: 10px;
+}
+
+.card {
+	height: 474px;
+	width: 300px;
+	background-size: contain;
+	margin-right: 10px!important;
+	border-radius: 0!important;
+	border: none!important;
+}
+
+.card-img {
+	height: 100%;
+	border-radius: 0!important;
+}
+
+.card-text {
+	font-family: 'din-2014';
+	font-weight: 600;
+	font-size: 1.5em;
+	height: 174px;
+	width: 100%;
+	padding-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 0;
+	background-color: white;
+	margin-bottom: 0px!important;
+	text-align: center;
+}
+
+.card-img-overlay {
+	padding: 0px!important;
+}
+
 @media (max-width: 425px) {
 	img.blog-image, img#headshot {
 		width: 70%!important;
@@ -153,5 +247,34 @@ div.col-lg-2 {
 		padding-right: 0px;
 		margin-left: 15%;
 		margin-right: 15%;
+	}
+
+	.index-intro {
+		width: 100%;
+		height: auto;
+		margin-top: 5%;
+	}
+
+	.index-intro > p {
+		font-size: 2em;
+		white-space: normal;
+		text-align: center;
+		line-height: 15px;
+	}
+
+	.typed {
+		line-height: 50px;
+	}
+
+	.latest-blogposts > p#all-posts > a {
+		font-size: 0.75em;
+	}
+
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+	.index-intro {
+		width: 100%;
+		margin-top: 25%;
 	}
 }
