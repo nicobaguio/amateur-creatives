@@ -222,7 +222,7 @@ div.col-lg-2 {
 	font-family: 'din-2014';
 	font-weight: 600;
 	font-size: 1.5em;
-	height: 174px;
+	height: 35%;
 	width: 100%;
 	padding-top: 10%;
 	padding-left: 5%;
@@ -238,6 +238,16 @@ div.col-lg-2 {
 
 .card-img-overlay {
 	padding: 0px!important;
+}
+
+.category-icon {
+	position: absolute;
+	height: auto;
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 100%;
+	z-index: 1;
 }
 
 @media (max-width: 425px) {

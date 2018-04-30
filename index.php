@@ -28,6 +28,7 @@
 						<img class="card-img" src="<?php echo $thumb; ?>">
 						<div class="card-img-overlay">
 							<p class="card-text"><?php the_title(); ?></p>
+							<img class="category-icon" src="<?php bloginfo('template_directory'); ?>/images/header-logo.png">
 						</div>
 					</div>
 				<?php endwhile ?>
