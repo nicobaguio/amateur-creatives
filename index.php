@@ -24,14 +24,17 @@
 			<?php if ( $the_query->have_posts() ) : ?>
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<?php $thumb = get_the_post_thumbnail_url(); ?>
-					<div class="card">
-						<img class="card-img" src="<?php echo $thumb; ?>">
-						<div class="card-img-overlay">
-							<div class="overlay"></div>
-							<p class="card-text"><span><?php the_title(); ?></span></p>
-							<img class="category-icon" src="<?php bloginfo('template_directory'); ?>/images/header-logo.png">
+					<?php $url = get_post_permalink(); ?>
+						<div class="card">
+							<a href="<?php echo $url; ?>">
+								<img class="card-img" src="<?php echo $thumb; ?>">
+								<div class="card-img-overlay">
+									<div class="overlay"></div>
+									<p class="card-text"><span><?php the_title(); ?></span></p>
+									<img class="category-icon" src="<?php bloginfo('template_directory'); ?>/images/header-logo.png">
+								</div>
+							</a>
 						</div>
-					</div>
 				<?php endwhile ?>
 				<?php wp_reset_postdata(); ?>
 			<?php else : ?>
