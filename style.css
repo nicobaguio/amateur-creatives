@@ -315,6 +315,17 @@ div.overlay {
 	.card-img-overlay:hover div.overlay {
 		display: block;
 	}
+
+	.card-img-overlay:hover div.overlay p {
+		font-family: 'Lora';
+		padding-top: 25%;
+		padding-left: 8%;
+		padding-right: 8%;
+		font-size: 1.25em;
+		color: #101318;
+		text-align: left;
+		line-height: 30px;
+	}
 	.card-img-overlay:hover .category-icon {
 		opacity: 0;
 	}

@@ -25,11 +25,14 @@
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<?php $thumb = get_the_post_thumbnail_url(); ?>
 					<?php $url = get_post_permalink(); ?>
+					<?php $excerpt = get_the_excerpt(); ?>
 						<div class="card">
 							<a href="<?php echo $url; ?>">
 								<img class="card-img" src="<?php echo $thumb; ?>">
 								<div class="card-img-overlay">
-									<div class="overlay"></div>
+									<div class="overlay">
+										<p><?php echo $excerpt; ?></p>
+									</div>
 									<p class="card-text"><span><?php the_title(); ?></span></p>
 									<img class="category-icon" src="<?php bloginfo('template_directory'); ?>/images/header-logo.png">
 								</div>
