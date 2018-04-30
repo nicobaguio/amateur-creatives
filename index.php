@@ -27,7 +27,8 @@
 					<div class="card">
 						<img class="card-img" src="<?php echo $thumb; ?>">
 						<div class="card-img-overlay">
-							<p class="card-text"><?php the_title(); ?></p>
+							<div class="overlay"></div>
+							<p class="card-text"><span><?php the_title(); ?></span></p>
 							<img class="category-icon" src="<?php bloginfo('template_directory'); ?>/images/header-logo.png">
 						</div>
 					</div>
