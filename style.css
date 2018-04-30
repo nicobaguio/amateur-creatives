@@ -235,6 +235,7 @@ div.col-lg-2 {
 	text-align: center;
 	letter-spacing: 1px;
 	transition: height 0.5s ease;
+	color: #3A393F;
 }
 
 .card-text span {
@@ -265,28 +266,6 @@ div.overlay {
 	width: 100%;
 	display: none;
 	opacity: 0.7;
-}
-
-.card-img-overlay:hover div.overlay {
-	display: block;
-}
-.card-img-overlay:hover .category-icon {
-	opacity: 0;
-}
-
-.card-img-overlay:hover p.card-text {
-	height: 10%;
-	padding-top: 3.5%;
-}
-
-.card-img-overlay:hover p.card-text span {
-	opacity: 0;
-	top: -9999px;
-	left: -9999px;
-}
-
-.card-img-overlay:hover p.card-text:after {
-	content: 'Read this';
 }
 
 @media (max-width: 425px) {
@@ -329,5 +308,32 @@ div.overlay {
 
 	.card-text {
 		font-size: 1.25em;
+	}
+}
+
+@media (min-width: 1024px) {
+	.card-img-overlay:hover div.overlay {
+		display: block;
+	}
+	.card-img-overlay:hover .category-icon {
+		opacity: 0;
+	}
+
+	.card-img-overlay:hover p.card-text {
+		height: 10%;
+		padding-top: 2.5%;
+	}
+
+	.card-img-overlay:hover p.card-text span {
+		opacity: 0;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.card-img-overlay:hover p.card-text:after {
+		content: 'Read this';
+		color: #E5725D;
+		font-size: 0.75em;
+		letter-spacing: 1px;
 	}
 }
