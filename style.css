@@ -115,12 +115,6 @@ blockquote.blockquote > p {
 	letter-spacing: 1px;
 }
 
-/*h2 {
-	font-family: 'Karla', sans-serif;
-	font-weight: 700;
-	letter-spacing: -1px;
-}
-*/
 img.alignleft {
 	margin: 0px 20px;
 	float: left;
@@ -151,6 +145,16 @@ div.col-lg-2 {
 
 .typed, .index-intro > p {
 	font-family: 'din-2014';
+}
+
+.typed-cursor {
+	animation: blinker 0.75s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
 }
 
 .index-intro {
