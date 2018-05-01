@@ -251,7 +251,7 @@ div.col-lg-2 {
 	position: absolute;
 	left: 4%;
 	right: 4%;
-	transition: opacity 0.2s ease 0.2s;
+	transition: opacity 0.2s ease 0.1s;
 }
 
 .card-img-overlay {
@@ -259,14 +259,14 @@ div.col-lg-2 {
 }
 
 .category-icon {
-	position: absolute;
+	position: relative;
 	height: auto;
 	width: 20%;
 	margin-left: 40%;
 	margin-right: 40%;
-	margin-top: 100%;
+	top: 57.5%;
 	z-index: 1;
-	transition: opacity 0.2s ease 0.2s;
+	transition: opacity 0.2s ease;
 }
 
 div.overlay {
@@ -337,6 +337,7 @@ div.overlay {
 	}
 	.card-img-overlay:hover .category-icon {
 		opacity: 0;
+		top: -42.5%;
 	}
 
 	.card-img-overlay:hover p.card-text {
@@ -346,8 +347,6 @@ div.overlay {
 
 	.card-img-overlay:hover p.card-text span.title {
 		opacity: 0;
-		top: -9999px;
-		left: -9999px;
 	}
 
 	.card-img-overlay:hover p.card-text span.read-this:after {
