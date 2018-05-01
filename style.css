@@ -175,8 +175,11 @@ div.col-lg-2 {
 	white-space: nowrap;
 }
 
-.typed {
+.styled-name {
+	font-family: 'din-2014', sans-serif;
+	font-style: normal;
 	font-weight: 600;
+	font-size: 1em;
 	border-bottom: 5px #F0DB76 solid;
 }
 
@@ -188,17 +191,17 @@ div.col-lg-2 {
 	margin-right: 0px!important;
 }
 
-.index-heading {
-	font-family: 'good-kitty';
-	text-transform: uppercase;
-	text-align: center;
-	padding-top: 55px;
-	padding-bottom: 55px;
-	color: #CE4D52;
-	width: 100%;
+h2 {
+	font-family: 'good-kitty'!important;
+	text-transform: uppercase!important;
+	text-align: center!important;
+	padding-top: 55px!important;
+	padding-bottom: 55px!important;
+	color: #CE4D52!important;
+	width: 100%!important;
 }
 
-#latest-blogposts > p#all-posts {
+#latest-blogposts > p.styled-link {
 	font-family: 'din-2014';
 	font-weight: 600;
 	font-size: 1.5em;
@@ -208,7 +211,7 @@ div.col-lg-2 {
 	margin: 75px 0px;
 }
 
-#latest-blogposts > p#all-posts > a {
+#latest-blogposts > p.styled-link > a {
 	color: white;
 	background-color: #E5725D;
 	padding: 10px;
@@ -303,11 +306,12 @@ div.overlay {
 		line-height: 50px;
 	}
 
-	#latest-blogposts > p#all-posts > a {
+	#latest-blogposts > p.styled-link > a {
 		font-size: 0.75em;
 	}
 
 }
+
 
 @media (min-width: 425px) and (max-width: 1024px) {
 	.index-intro {

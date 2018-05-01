@@ -5,13 +5,13 @@
 	<div class="col-sm-5 col-lg-5 hero-intro">
 			<div class="index-intro">
 				<p>Hi, my name is Pam</p>
-				<p>and I'm <span class="typed"></span></p>
+				<p>and I'm <span class="typed styled-name"></span></p>
 			</div>
 	</div>
 	<div class="col-sm-1 col-lg-2"></div>
 </div>
 <div class="row" id="latest-blogposts">
-	<h1 class="index-heading">Latest Blogposts</h1>
+	<h2 class="index-heading">Latest Blogposts</h2>
 	<div class="col-sm-1 col-lg-2"></div>
 	<div class="col-sm-10 col-lg-8">
 		<div class="card-deck">
@@ -52,7 +52,7 @@
 		</div>
 	</div>
 	<div class="col-sm-1 col-lg-2"></div>
-	<p id="all-posts"><a href="#">Check out out all my blogposts</a></p>
+	<p class="styled-link"><a href="#">Check out out all my blogposts</a></p>
 </div>
 <div class="row" id="email-form-container">
 	<div class="col-sm-1 col-lg-2"></div>
