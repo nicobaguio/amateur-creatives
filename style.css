@@ -254,7 +254,7 @@ h2 {
 	position: absolute;
 	left: 4%;
 	right: 4%;
-	transition: opacity 0.2s ease 0.1s;
+	transition: opacity 0.1s ease 0.1s;
 }
 
 .card-img-overlay {
@@ -359,6 +359,11 @@ input[type='submit'] {
 
 }
 
+.read-this {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease;
+}
 
 @media (min-width: 425px) and (max-width: 1024px) {
 	.index-intro {
@@ -401,10 +406,11 @@ input[type='submit'] {
 		opacity: 0;
 	}
 
-	.card-img-overlay:hover p.card-text span.read-this:after {
-		content: 'Read this';
+	.card-img-overlay:hover p.card-text span.read-this {
+		visibility: visible;
 		color: #E5725D;
 		font-size: 0.75em;
 		letter-spacing: 1px;
+		opacity: 1;
 	}
 }

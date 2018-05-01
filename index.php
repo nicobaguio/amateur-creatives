@@ -38,7 +38,7 @@
 									</div>
 									<p class="card-text">
 										<span class="title"><?php the_title(); ?></span>
-										<span class="read-this"></span>
+										<span class="read-this">Read this</span>
 									</p>
 									<img class="category-icon" src="<?php echo $image_data[0] ?>">
 								</div>
