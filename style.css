@@ -242,7 +242,7 @@ div.col-lg-2 {
 	color: #3A393F;
 }
 
-.card-text span {
+.card-text span.title {
 	position: absolute;
 	left: 4%;
 	right: 4%;
@@ -336,16 +336,16 @@ div.overlay {
 
 	.card-img-overlay:hover p.card-text {
 		height: 10%;
-		padding-top: 2.5%;
+		padding-top: 0%;
 	}
 
-	.card-img-overlay:hover p.card-text span {
+	.card-img-overlay:hover p.card-text span.title {
 		opacity: 0;
 		top: -9999px;
 		left: -9999px;
 	}
 
-	.card-img-overlay:hover p.card-text:after {
+	.card-img-overlay:hover p.card-text span.read-this:after {
 		content: 'Read this';
 		color: #E5725D;
 		font-size: 0.75em;

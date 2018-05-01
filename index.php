@@ -36,7 +36,10 @@
 									<div class="overlay">
 										<p><?php echo $excerpt; ?></p>
 									</div>
-									<p class="card-text"><span><?php the_title(); ?></span></p>
+									<p class="card-text">
+										<span class="title"><?php the_title(); ?></span>
+										<span class="read-this"></span>
+									</p>
 									<img class="category-icon" src="<?php echo $image_data[0] ?>">
 								</div>
 							</a>
