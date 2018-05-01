@@ -11,7 +11,7 @@
 	<div class="col-sm-1 col-lg-2"></div>
 </div>
 <div class="row" id="latest-blogposts">
-	<h1>Latest Blogposts</h1>
+	<h1 class="index-heading">Latest Blogposts</h1>
 	<div class="col-sm-1 col-lg-2"></div>
 	<div class="col-sm-10 col-lg-8">
 		<div class="card-deck">

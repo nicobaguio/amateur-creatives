@@ -188,7 +188,7 @@ div.col-lg-2 {
 	margin-right: 0px!important;
 }
 
-#latest-blogposts > h1 {
+.index-heading {
 	font-family: 'good-kitty';
 	text-transform: uppercase;
 	text-align: center;
