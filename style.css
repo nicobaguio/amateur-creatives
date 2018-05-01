@@ -389,6 +389,22 @@ input[type='submit'] {
 	transition: opacity 0.5s ease;
 }
 
+.final-footer {
+	background-color: #EBB4BA;
+	height: 55px;
+	overflow: hidden;
+}
+
+.final-footer p {
+	font-family: 'Lora', serif;
+	font-style: italic;
+	font-size: 0.8em;
+	color: white;
+	height: 100%;
+	width: auto;
+	margin: 15% auto 15%;
+}
+
 @media (min-width: 576px) and (max-width: 768.99px) {
 	.homepage-left-wide input[type='email'] {
  		width: 70%;
