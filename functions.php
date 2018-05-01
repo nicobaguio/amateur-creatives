@@ -18,6 +18,20 @@ function my_styles() {
 
 add_action( 'wp_head', 'my_styles');
 
+if (function_exists( 'register_sidebar' )) {
+function ac_email_widgets() {
+	register_sidebar( array(
+		'name' => 'Email Form Index',
+		'id' => 'email-form',
+		'description' => 'this is an email form widget!',
+		'before_widget' => '<div class="email-form">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	) );
+}};
+
+add_action( 'widgets_init', 'ac_email_widgets');
 add_theme_support( 'post-thumbnails' );
 add_post_type_support( 'page', 'excerpt' );
 add_theme_support( 'custom-header' );

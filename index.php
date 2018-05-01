@@ -55,8 +55,15 @@
 	<p class="styled-link"><a href="#">Check out out all my blogposts</a></p>
 </div>
 <div class="row" id="email-form-container">
+	<h2>Join the Amateur Creatives Club!</h2>
 	<div class="col-sm-1 col-lg-2"></div>
-	<div class="col-sm-5 col-lg-5 email-form"></div>
+	<div class="col-sm-5 col-lg-5">
+<!-- 		<h3>DIN 2014 is the alternative typeface.</h3>
+		<br>
+		<p>Since Heartwell was more feminine and distinct, to provide some balance to that we went in search of a more clean, simple sans-serif font that would provide some structure and speak more to that coding/technology aspect of her brand.</p>
+		<h5>Hi, I'm <span class="styled-name">Nico.</span> and I'd love to join the club and receive your weekly letters at <span class="styled-name">nico@baguio.com!</span></h5> -->
+	<?php dynamic_sidebar( 'email-form' ); ?>
+	</div>
 	<div class="col-sm-3 col-lg-3"><img src="<?php bloginfo('template_directory'); ?>/images/homepage_headshot.png" id="emailshot"></div>
 	<div class="col-sm-1 col-lg-2"></div>
 </div>
