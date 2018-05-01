@@ -214,7 +214,7 @@ h2 {
 #latest-blogposts > p.styled-link > a {
 	color: white;
 	background-color: #E5725D;
-	padding: 10px;
+	padding: 10px 13px;
 }
 
 .card {
@@ -320,12 +320,13 @@ input[type='submit'] {
 	border: none;
 	background-color: #E5725D;
 	color: white;
-	padding: 10px;
+	padding: 10px 13px;
 	font-size: 1.25em;
 	text-transform: uppercase;
 	margin-top: 10px;
-	font-weight: 300;
+	font-weight: 700;
 }
+
 @media (max-width: 425px) {
 	img.blog-image, img#headshot {
 		width: 70%!important;
