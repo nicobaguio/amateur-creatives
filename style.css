@@ -32,9 +32,9 @@ img.header-logo {
 	width: 100%;
 }
 
-img.homepage-right {
-	height: auto;
+.homepage-right img {
 	width: 100%;
+	height: auto;
 }
 
 div.banner {
@@ -290,6 +290,7 @@ h5 {
 	font-size: 1.25em;
 	text-align: left;
 	letter-spacing: 2px!important;
+	line-height: 35px;
 }
 
 .homepage-left-wide h3 {
@@ -304,15 +305,22 @@ h5 {
 	font-size: 0.8em;
 }
 
-input[type='text'], .homepage-left-wide input[type='email'] {
+.homepage-left-wide input[type='text'], .homepage-left-wide input[type='email'] {
   font-family: 'din-2014';
   border: none;
-  border-bottom: 5px #F0DB76 solid;
+  border-bottom: 3px #F0DB76 solid;
   text-transform: uppercase;
   text-align: center;
   font-size: 0.75em;
-  min-width: 20px;
   letter-spacing: 1.5px;
+}
+
+.homepage-left-wide input[type='text'] {
+  width: 25%;
+}
+
+.homepage-left-wide input[type='email'] {
+  width: 40%;
 }
 
 input[type='submit'] {
@@ -327,7 +335,8 @@ input[type='submit'] {
 	font-weight: 700;
 }
 
-@media (max-width: 425px) {
+/* Mobiles */
+@media (max-width: 576px) {
 	img.blog-image, img#headshot {
 		width: 70%!important;
 		padding-left: 0px;
@@ -357,6 +366,21 @@ input[type='submit'] {
 		font-size: 0.75em;
 	}
 
+	.col-sm-6, .col-sm-5 {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.homepage-left-wide h5 {
+		font-size: 1em;
+	}
+
+	input[type='submit'] {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+		font-size: 1em;
+	}
 }
 
 .read-this {
@@ -365,18 +389,31 @@ input[type='submit'] {
 	transition: opacity 0.5s ease;
 }
 
-@media (min-width: 425px) and (max-width: 1024px) {
+@media (min-width: 576px) and (max-width: 768.99px) {
+	.homepage-left-wide input[type='email'] {
+ 		width: 70%;
+	}
+
+}
+/* Big Mobiles and most Tablets*/
+@media (min-width: 576px) and (max-width: 1199.99px) {
 	.index-intro {
 		width: 100%;
 		margin-top: 25%;
 	}
 
+	.index-intro > p {
+		font-size: 2em;
+		line-height: 40px;
+	}
+
 	.card-text {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 }
 
-@media (min-width: 1024px) {
+/*Laptops only*/
+@media (min-width: 1200px) {
 	.card-img-overlay:hover div.overlay {
 		display: block;
 	}
