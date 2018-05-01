@@ -32,7 +32,7 @@ img.header-logo {
 	width: 100%;
 }
 
-#emailshot {
+img.homepage-right {
 	height: auto;
 	width: 100%;
 }
@@ -286,25 +286,25 @@ h5 {
 	color: #3A393F;
 }
 
-.email-form h5 {
+.homepage-left-wide h5 {
 	font-size: 1.25em;
 	text-align: left;
 	letter-spacing: 2px!important;
 }
 
-.email-form h3 {
+.homepage-left-wide h3 {
 	font-family: 'din-2014';
 	font-weight: 700;
 	font-size: 1.5em;
 	letter-spacing: 1px;
 }
 
-.email-form p {
+.homepage-left-wide p {
 	font-family: 'Lora';
 	font-size: 0.8em;
 }
 
-input[type='text'], .email-form input[type='email'] {
+input[type='text'], .homepage-left-wide input[type='email'] {
   font-family: 'din-2014';
   border: none;
   border-bottom: 5px #F0DB76 solid;

@@ -19,19 +19,29 @@ function my_styles() {
 add_action( 'wp_head', 'my_styles');
 
 if (function_exists( 'register_sidebar' )) {
-function ac_email_widgets() {
+function ac_home_widgets() {
 	register_sidebar( array(
-		'name' => 'Email Form Index',
-		'id' => 'email-form',
-		'description' => 'this is an email form widget!',
-		'before_widget' => '<div class="email-form">',
+		'name' => 'Homepage Left Wide',
+		'id' => 'homepage-left-wide',
+		'description' => 'Left side (Wide) of the Homepage',
+		'before_widget' => '<div class="homepage-left-wide">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	) );
+
+	register_sidebar( array(
+		'name' => 'Homepage Right',
+		'id' => 'homepage-right',
+		'description' => 'Right side of the Homepage',
+		'before_widget' => '<div class="homepage-right">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>'
 	) );
 }};
 
-add_action( 'widgets_init', 'ac_email_widgets');
+add_action( 'widgets_init', 'ac_home_widgets');
 add_theme_support( 'post-thumbnails' );
 add_post_type_support( 'page', 'excerpt' );
 add_theme_support( 'custom-header' );
