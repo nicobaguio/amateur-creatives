@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="row hero">
+<div class="row" id="hero">
 	<div class="col-sm-1 col-lg-2"></div>
 	<div class="col-sm-3 col-lg-3 hero-image"><img src="<?php bloginfo('template_directory'); ?>/images/homepage_headshot.png" id="headshot"></div>
 	<div class="col-sm-5 col-lg-5 hero-intro">
@@ -10,7 +10,7 @@
 	</div>
 	<div class="col-sm-1 col-lg-2"></div>
 </div>
-<div class="row latest-blogposts">
+<div class="row" id="latest-blogposts">
 	<h1>Latest Blogposts</h1>
 	<div class="col-sm-1 col-lg-2"></div>
 	<div class="col-sm-10 col-lg-8">
@@ -53,5 +53,11 @@
 	</div>
 	<div class="col-sm-1 col-lg-2"></div>
 	<p id="all-posts"><a href="#">Check out out all my blogposts</a></p>
+</div>
+<div class="row" id="email-form-container">
+	<div class="col-sm-1 col-lg-2"></div>
+	<div class="col-sm-5 col-lg-5 email-form"></div>
+	<div class="col-sm-3 col-lg-3"><img src="<?php bloginfo('template_directory'); ?>/images/homepage_headshot.png" id="emailshot"></div>
+	<div class="col-sm-1 col-lg-2"></div>
 </div>
 <?php get_footer(); ?>

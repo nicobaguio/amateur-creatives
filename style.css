@@ -32,6 +32,11 @@ img.header-logo {
 	width: 100%;
 }
 
+#emailshot {
+	height: auto;
+	width: 100%;
+}
+
 div.banner {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -175,7 +180,7 @@ div.col-lg-2 {
 	border-bottom: 5px #F0DB76 solid;
 }
 
-.latest-blogposts {
+#latest-blogposts {
 	margin-top: -1px;
 	background-image: url('./images/homepage_blog-bg.jpg');
 	width: 100%;
@@ -183,7 +188,7 @@ div.col-lg-2 {
 	margin-right: 0px!important;
 }
 
-.latest-blogposts > h1 {
+#latest-blogposts > h1 {
 	font-family: 'good-kitty';
 	text-transform: uppercase;
 	text-align: center;
@@ -193,7 +198,7 @@ div.col-lg-2 {
 	width: 100%;
 }
 
-.latest-blogposts > p#all-posts {
+#latest-blogposts > p#all-posts {
 	font-family: 'din-2014';
 	font-weight: 600;
 	font-size: 1.5em;
@@ -203,7 +208,7 @@ div.col-lg-2 {
 	margin: 75px 0px;
 }
 
-.latest-blogposts > p#all-posts > a {
+#latest-blogposts > p#all-posts > a {
 	color: white;
 	background-color: #E5725D;
 	padding: 10px;
@@ -298,7 +303,7 @@ div.overlay {
 		line-height: 50px;
 	}
 
-	.latest-blogposts > p#all-posts > a {
+	#latest-blogposts > p#all-posts > a {
 		font-size: 0.75em;
 	}
 
