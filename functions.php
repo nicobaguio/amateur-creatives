@@ -14,6 +14,7 @@ function my_styles() {
 	wp_enqueue_style( 'style', get_stylesheet_uri());
 	wp_enqueue_style( 'bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css');
 	wp_enqueue_style( 'flickity-css', 'https://unpkg.com/flickity@2.1.1/dist/flickity.min.css');
+	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.10/css/all.css');
 };
 
 add_action( 'wp_head', 'my_styles');
