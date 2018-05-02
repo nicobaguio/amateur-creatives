@@ -335,6 +335,64 @@ input[type='submit'] {
 	font-weight: 700;
 }
 
+.read-this {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease;
+}
+
+.final-footer {
+	background-color: #EBB4BA;
+	height: 55px;
+	overflow: hidden;
+}
+
+.final-footer p {
+	font-family: 'Lora', serif;
+	font-style: italic;
+	font-size: 0.8em;
+	color: white;
+	height: 100%;
+	width: auto;
+	margin: 15% auto 15%;
+}
+
+.footer-link {
+	font-family: 'din-2014';
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #94C7C2;
+	font-size: 1.25em;
+	padding: 0 2vw;
+}
+
+.pre-footer-nav {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5vh;
+}
+
+.navbar-brand {
+	margin: 0;
+	font-family: 'din-2014';
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #94C7C2!important;
+}
+
+.fas {
+	font-size: 2em;
+}
+
+.navbar {
+	padding: 0;
+}
+
+.navbar-toggler {
+	border: none!important;
+}
 /* Mobiles */
 @media (max-width: 576px) {
 	img.blog-image, img#headshot {
@@ -381,30 +439,11 @@ input[type='submit'] {
 		margin-right: 15%;
 		font-size: 1em;
 	}
+
 }
 
-.read-this {
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity 0.5s ease;
-}
 
-.final-footer {
-	background-color: #EBB4BA;
-	height: 55px;
-	overflow: hidden;
-}
-
-.final-footer p {
-	font-family: 'Lora', serif;
-	font-style: italic;
-	font-size: 0.8em;
-	color: white;
-	height: 100%;
-	width: auto;
-	margin: 15% auto 15%;
-}
-
+/*Big Mobiles to Medium Tablets*/
 @media (min-width: 576px) and (max-width: 768.99px) {
 	.homepage-left-wide input[type='email'] {
  		width: 70%;
