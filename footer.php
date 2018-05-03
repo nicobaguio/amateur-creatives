@@ -16,9 +16,7 @@
 						''
 					) ); ?>
 			</nav>
-			<div class="row">
-				<p>THIS IS THE PRE FOOTER</p>
-			</div>
+			<?php dynamic_sidebar( 'pre-footer'); ?>
 		</div>
 		<div class="col-sm-1 col-lg-2"></div>
 	</div>

@@ -40,6 +40,16 @@ function ac_home_widgets() {
 		'before_title' => '<h3>',
 		'after_title' => '</h3>'
 	) );
+
+	register_sidebar( array(
+		'name' => 'Pre Footer',
+		'id' => 'pre-footer',
+		'description' => 'Pre Footer widget',
+		'before_widget' => '<div class="row pre-footer">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	) );
 }};
 
 if ( function_exists( 'register_nav_menus' ) ) {

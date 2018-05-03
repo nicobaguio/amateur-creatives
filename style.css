@@ -440,7 +440,9 @@ input[type='submit'] {
 	.homepage-left-wide h5 {
 		font-size: 1em;
 	}
-
+	.homepage-left-wide input[type='email'] {
+		width: 60%;
+	}
 	input[type='submit'] {
 		width: 70%;
 		margin-left: 15%;
@@ -457,6 +459,21 @@ input[type='submit'] {
  		width: 70%;
 	}
 
+	.homepage-left-wide input[type='text'] {
+ 		width: 54%;
+	}
+
+}
+
+/*Medium Tablets and Small Laptops*/
+@media (min-width: 789px) and (max-width: 1799.99px) {
+	.homepage-left-wide input[type="text"] {
+		width: 40%;
+	}
+
+	.homepage-left-wide input[type="email"] {
+		width: 50%;
+	}
 }
 /* Big Mobiles and most Tablets*/
 @media (min-width: 576px) and (max-width: 1199.99px) {
