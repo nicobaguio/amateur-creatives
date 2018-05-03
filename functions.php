@@ -42,6 +42,17 @@ function ac_home_widgets() {
 	) );
 }};
 
+if ( function_exists( 'register_nav_menus' ) ) {
+	function ac_nav_menus() {
+		register_nav_menus(
+			array(
+				'main-menu' => 'Main Menu',
+				'secondary-menu' => 'Secondary Menu'
+		)
+	);
+}}
+
+add_action( 'init', 'ac_nav_menus' );
 add_action( 'widgets_init', 'ac_home_widgets');
 add_theme_support( 'post-thumbnails' );
 add_post_type_support( 'page', 'excerpt' );
