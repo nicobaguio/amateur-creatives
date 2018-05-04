@@ -15,3 +15,12 @@
 				<?php $logo = wp_get_attachment_image_src( $custom_logo_id, 'full'); ?>
 				<img  class="header-logo" src="<?php echo $logo[0] ?>">
 			</header>
+				<div class="sticky-button">
+					<button class="primary-menu-button" href="#primary-menu" role="button" onClick="$( this ).toggleClass('active')">
+						Explore
+					</button>
+				</div>
+
+				<div id="primary-menu">
+					<div id="pm-search"><?php get_search_form(); ?></div>
+				</div>
