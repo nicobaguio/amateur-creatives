@@ -284,5 +284,20 @@ div#email-form p#final {
     #email-form input {
     	padding: 5px;
     }
+
+	#email-form #input-container {
+		margin-left: 4.5vw;
+	}
+
+	#email-form input[type = 'text'] {
+		width: 80%;
+	}
+
+	#email-form input[type = 'email'] {
+		width: 80%;
+	}
+
+	#email-form input[type = 'submit'] {
+		width: 60%;
 }
 
