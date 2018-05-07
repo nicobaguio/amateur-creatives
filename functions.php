@@ -1,7 +1,7 @@
 <?php
 function my_scripts() {
 	wp_enqueue_script( 'jquery-min-js', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', $in_footer=true);
-;	wp_enqueue_script( 'popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', array('jquery-min-js'), $in_footer=true);
+	wp_enqueue_script( 'popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', array('jquery-min-js'), $in_footer=true);
 	wp_enqueue_script( 'bootstrap4-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js', array('popper-js'), $in_footer=true);
 	wp_enqueue_script( 'typed-js', 'https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js', $in_footer=true);
 	wp_enqueue_script( 'flickity-js', 'https://unpkg.com/flickity@2.1.1/dist/flickity.pkgd.min.js', $in_footer=true);
@@ -60,8 +60,24 @@ if ( function_exists( 'register_nav_menus' ) ) {
 				'secondary-menu' => 'Secondary Menu'
 		)
 	);
-}}
+}};
 
+function coming_soon() {
+	if ( is_page( 'coming-soon' ) ) {
+		wp_enqueue_script( 'jquery-min-js', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', $in_footer=true);
+		wp_enqueue_script( 'popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', array('jquery-min-js'), $in_footer=true);
+		wp_enqueue_script( 'bootstrap4-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js', array('popper-js'), $in_footer=true);
+		wp_enqueue_script( 'typed-js', 'https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js', $in_footer=true);
+		wp_enqueue_style( 'coming-soon.css', get_stylesheet_directory_uri() . '/coming-soon.css');
+		wp_enqueue_style( 'bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css');
+	};
+
+	if ( !is_admin()) {
+		remove_action( 'wp_head', '_admin_bar_bump_cb' );
+	};
+};
+
+add_action( 'wp_enqueue_scripts', 'coming_soon' );
 add_action( 'init', 'ac_nav_menus' );
 add_action( 'widgets_init', 'ac_home_widgets');
 add_theme_support( 'post-thumbnails' );
