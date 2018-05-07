@@ -100,11 +100,20 @@ div#email-form p#final {
 	width: 20%;
 }
 
+#email-form p::-moz-selection {
+	background: #B6C2F2;
+}
+
+#email-form p::selection {
+	background: #B6C2F2;
+}
+
 @media (max-width: 1280px) {
 	#email-form p {
 		font-size: 1.5em;
 	}
 }
+
 
 @media (max-width: 1024px) {
 	#email-form p {
@@ -265,5 +274,15 @@ div#email-form p#final {
 
 	#email-form input[type = 'submit'] {
 		width: 50%;
+}
+
+@media (max-height: 600px) {
+    #email-form p {
+        font-size: 0.8em;
+    }
+
+    #email-form input {
+    	padding: 5px;
+    }
 }
 
