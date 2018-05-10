@@ -1,0 +1,598 @@
+/*
+Theme Name: NicoBeAwesome
+Theme URI: www.nicobaguio.com/NicoBeAwesome
+Description: HELLO Y'ALL!
+Version: 1.0
+Author: Nico Baguio
+Author URI: www.nicobaguio.com
+*/
+
+@import url('https://use.typekit.net/vud4jjs.css');
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+
+body {
+  overflow-x: hidden;
+}
+
+@import "./_include-media.scss";
+
+// breakpoint definitions
+$breakpoints: (
+    'small-phone': 320px,
+    'big-phone': 500px,
+    'tablet': 720px,
+    'laptop': 1280px,
+) !default;
+
+
+// color defitions
+$ac-gold: #fafed8;
+
+.primary-menu-button {
+  font-family: 'din-2014';
+  font-size: 1.25em;
+  font-weight: 600;
+  position: sticky;
+  left: 100%;
+  height: 53px;
+  transition: .35s ease;
+  -webkit-transform: rotate(-90deg) translateY(0vw);
+  -moz-transform: rotate(-90deg) translateY(0vw);
+  -ms-transform: rotate(-90deg) translateY(0vw);
+  -o-transform: rotate(-90deg) translateY(0vw);
+  transform: rotate(-90deg) translateY(0vw);
+  transform-origin: 60% -10%;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 0 !important;
+  background-color: #ce4d52;
+  &:hover {
+    cursor: pointer;
+  }
+  &.active {
+    transition: .35s ease;
+    transform: rotate(-90deg) translateY(-15vw);
+  }
+}
+
+div.sticky-button {
+  position: sticky;
+  z-index: 3;
+  top: 35vh;
+  left: 100%;
+}
+
+input#s {
+  font-family: 'din-2014';
+  font-size: .9em;
+  width: 13vw;
+  padding-bottom: 5%;
+  letter-spacing: 1px;
+  color: #fafed8;
+  border: none;
+  border-bottom: 2px #fafed8 solid;
+  background-color: inherit;
+  &::placeholder {
+    font-family: 'din-2014';
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: #fafed8;
+  }
+}
+
+div {
+  &#pm-search {
+    position: absolute;
+    top: 5vh;
+    left: 1vw;
+    width: 12.5vw;
+  }
+  &#primary-menu {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 100%;
+    width: 15%;
+    height: 100%;
+    transition: .35s ease;
+    transform: translateX(0%);
+    background-color: #ce4d52;
+    &.reveal {
+      transition: .35s ease;
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.main-menu {
+  position: absolute;
+  top: 15vh;
+  right: 1vw;
+}
+
+#menu-main-menu {
+  list-style: none;
+  .menu-item {
+    margin: 35px 0;
+    text-align: right;
+    letter-spacing: 2px;
+    a {
+      font-family: 'din-2014';
+      font-size: 1.1em;
+      padding: 10px;
+      text-transform: uppercase;
+      color: #3a393f;
+      background-color: white;
+    }
+  }
+}
+
+#latest-blogpost {
+  position: relative;
+  top: 40vh;
+  h3 {
+    font-family: 'din-2014';
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fafed8;
+  }
+  div.card {
+    font-size: .75em;
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+div {
+  &#page-overlay {
+    position: fixed;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    &.reveal {
+      z-index: 2;
+      visibility: visible;
+      opacity: .75;
+      background-color: whitesmoke;
+    }
+  }
+  &.header-logo {
+    margin-top: -150px;
+  }
+}
+
+img.header-logo {
+  height: 220px;
+  margin-top: -150px;
+  margin-right: auto;
+  margin-left: auto;
+  /*padding-right: 10%;*/
+  /*max-width: 50%;*/
+}
+
+#headshot, .homepage-right img {
+  width: 100%;
+  height: auto;
+}
+
+div {
+  &.banner {
+    width: 100%;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  &.blog-container {
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 50px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  &.blog-title h1.title {
+    font-family: 'Lora', serif;
+    font-size: 3.75em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &.metadata p {
+    font-family: 'Inconsolota', monospace;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #d9d9d9;
+  }
+  &.blog-text {
+    margin-top: 60px;
+    padding-right: 0;
+    padding-left: 0;
+    p {
+      font-family: 'Lora', serif;
+      font-size: .75em;
+      line-height: 18pt;
+      padding-right: 25%;
+      padding-left: 25%;
+    }
+    h2 {
+      width: 100%;
+      padding-top: 30px;
+      padding-right: 25%;
+      padding-bottom: 5px;
+      padding-left: 25%;
+    }
+  }
+}
+
+img.blog-image {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 25%;
+  padding-left: 25%;
+}
+
+blockquote.blockquote {
+  vertical-align: center;
+  > p {
+    font-family: 'Lora', serif;
+    font-size: 20pt;
+    font-style: italic;
+    line-height: 25pt;
+    padding-top: 30px;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+
+img {
+  &.alignleft {
+    float: left;
+    max-width: 40%;
+    margin: 0 20px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  &.alignright {
+    float: right;
+    margin: 0 20px;
+  }
+  &.aligncenter {
+    width: 100% !important;
+    height: 100% !important;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+div {
+  &.col-xs-12, &.col-12, &.col-lg-2 {
+    padding: 0;
+  }
+}
+
+.typed, .index-intro > p {
+  font-family: 'din-2014';
+}
+
+.typed-cursor {
+  animation: blinker .75s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.index-intro {
+  width: 100%;
+  margin-top: 45%;
+  > p {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 55px;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+}
+
+.styled-name {
+  font-family: 'din-2014', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  font-style: normal;
+  border-bottom: 5px #f0db76 solid;
+}
+
+#latest-blogposts {
+  width: 100%;
+  margin-top: -1px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  background-image: url('./images/homepage_blog-bg.jpg');
+}
+
+h2 {
+  font-family: "good-kitty" !important;
+  width: 100% !important;
+  padding-top: 55px !important;
+  padding-bottom: 55px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  color: #ce4d52 !important;
+}
+
+#latest-blogposts > p.styled-link {
+  font-family: 'din-2014';
+  font-size: 1.5em;
+  font-weight: 600;
+  width: 100%;
+  margin: 75px 0;
+  text-align: center;
+  text-transform: uppercase;
+  > a {
+    padding: 10px 13px;
+    color: white;
+    background-color: #e5725d;
+  }
+}
+
+.card {
+  width: 300px;
+  margin-right: 10px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background-size: contain;
+}
+
+.card-img {
+  height: 100%;
+  border-radius: 0 !important;
+}
+
+.card-text {
+  font-family: 'din-2014';
+  font-size: 1.5em;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35%;
+  margin-bottom: 0 !important;
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  transition: height .5s ease;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #3a393f;
+  background-color: white;
+  span.title {
+    position: absolute;
+    right: 4%;
+    left: 4%;
+    transition: opacity .1s ease .1s;
+  }
+}
+
+.card-img-overlay {
+  padding: 0 !important;
+}
+
+.category-icon {
+  position: relative;
+  z-index: 1;
+  top: 57.5%;
+  width: 20%;
+  height: auto;
+  margin-right: 40%;
+  margin-left: 40%;
+  transition: opacity .1s ease-out .15s;
+}
+
+div.overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  background: #ebb4ba;
+}
+
+h5 {
+  font-family: "Lora" !important;
+  font-style: italic;
+  color: #3a393f;
+}
+
+.homepage-left-wide {
+  h5 {
+    font-size: 1.25em;
+    line-height: 35px;
+    text-align: left;
+    letter-spacing: 2px !important;
+  }
+  h3 {
+    font-family: 'din-2014';
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  p {
+    font-family: 'Lora';
+    font-size: .8em;
+  }
+  input {
+    &[type='text'], &[type='email'] {
+      font-family: 'din-2014';
+      font-size: .75em;
+      text-align: center;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border: none;
+      border-bottom: 3px #f0db76 solid;
+    }
+    &[type='text'] {
+      width: 25%;
+    }
+    &[type='email'] {
+      width: 40%;
+    }
+  }
+}
+
+input[type='submit'] {
+  font-family: 'din-2014';
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 10px 13px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  background-color: #e5725d;
+}
+
+.read-this {
+  visibility: hidden;
+  transition: opacity .5s ease;
+  opacity: 0;
+}
+
+.pre-footer {
+  background-color: #f2f2f2;
+}
+
+.pre-footer-nav {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5vh;
+  text-align: center;
+  > li {
+    font-family: 'din-2014';
+    font-size: 1.25em;
+    font-weight: 600;
+    padding: 0 2vw;
+    text-transform: uppercase;
+    color: #94c7c2;
+    > a {
+      color: #94c7c2;
+    }
+  }
+}
+
+.navbar-brand {
+  font-family: 'din-2014';
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #94c7c2 !important;
+}
+
+.fas {
+  font-size: 2em;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.final-footer {
+  overflow: hidden;
+  height: 55px;
+  background-color: #ebb4ba;
+  p {
+    font-family: 'Lora', serif;
+    font-size: .8em;
+    font-style: italic;
+    width: auto;
+    height: 100%;
+    margin: 15% auto 15%;
+    color: white;
+  }
+}
+
+#email-form-container {
+  padding: 20px 0;
+}
+
+/* for 1440 by 900 display */
+@media (min-width: 1366px) and (max-width: 1440px) {
+  #latest-blogpost {
+    h3 {
+      font-size: 1em;
+    }
+    p.card-text {
+      font-size: 1.25em;
+    }
+    top: 60vh;
+  }
+}
+
+@media (max-width: 1366.99px) {
+  #latest-blogpost {
+    top: 58vh;
+    p.card-text {
+      font-size: 1em;
+    }
+  }
+}
+
+/* For all laptops */
+@media (min-width: 1366px) {
+  .card-img-overlay:hover {
+    div.overlay {
+      display: block;
+      p {
+        font-family: 'Lora';
+        font-size: 1.25em;
+        line-height: 30px;
+        padding-top: 25%;
+        padding-right: 8%;
+        padding-left: 8%;
+        text-align: left;
+        color: #101318;
+      }
+    }
+    .category-icon {
+      top: -42.5%;
+      transition: opacity .2s ease;
+      opacity: 0;
+    }
+    p.card-text {
+      height: 10%;
+      padding-top: 0;
+      span {
+        &.title {
+          opacity: 0;
+        }
+        &.read-this {
+          font-size: .75em;
+          visibility: visible;
+          letter-spacing: 1px;
+          opacity: 1;
+          color: #e5725d;
+        }
+      }
+    }
+  }
+}
