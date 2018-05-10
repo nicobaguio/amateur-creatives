@@ -1,4 +1,4 @@
-var typed = new Typed(".typed", {
+var active= new Typed(".typed", {
 	strings: [
 		"an art explorer. ",
 		"a memory-keeper. ",
@@ -27,5 +27,10 @@ $(document).ready( function() {
 	$('.primary-menu-button').on('click', function () {
 		$('#primary-menu').toggleClass('reveal');
 		$('#page-overlay').toggleClass('reveal');
+	});
+	$('#page-overlay').on('click', function () {
+		$('#primary-menu').toggleClass('reveal');
+		$('#page-overlay').toggleClass('reveal');
+		$('.primary-menu-button').toggleClass('active');
 	});
 });
