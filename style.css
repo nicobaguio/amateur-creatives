@@ -626,32 +626,7 @@ input[type='submit'] {
     padding: 20px 0;
 }
 
-/* for 1440 by 900 display */
-@media (min-width: 1366px) and (max-width: 1440px) {
-    #latest-blogpost h3 {
-        font-size: 1em;
-    }
-
-    #latest-blogpost p.card-text {
-        font-size: 1.25em;
-    }
-
-    #latest-blogpost {
-        top: 60vh;
-    }
-}
-
-@media (max-width: 1366.99px) {
-    #latest-blogpost {
-        top: 58vh;
-    }
-
-    #latest-blogpost p.card-text {
-        font-size: 1em;
-    }
-}
-
-/* For all laptops */
+/* Apply dropdown card when it's a laptop*/
 @media (min-width: 1366px) {
     .card-img-overlay:hover div.overlay {
         display: block;
