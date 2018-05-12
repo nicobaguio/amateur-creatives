@@ -18,7 +18,7 @@
 				<img  class="header-logo" src="<?php echo $logo[0] ?>">
 			</header>
 			<div class="sticky-button">
-				<button class="primary-menu-button" href="#primary-menu" role="button" onClick="$( this ).toggleClass('active')">
+				<button id="primary-menu-button" href="#primary-menu" role="button" onClick="$( this ).toggleClass('active')">
 					Explore
 				</button>
 			</div>

@@ -14,7 +14,7 @@ body {
     overflow-x: hidden;
 }
 
-.primary-menu-button {
+#primary-menu-button {
     font-family: 'din-2014';
     font-size: 1.25em;
     font-weight: 600;
@@ -40,11 +40,11 @@ body {
     background-color: #ce4d52;
 }
 
-.primary-menu-button:hover {
+#primary-menu-button:hover {
     cursor: pointer;
 }
 
-.primary-menu-button.active {
+#primary-menu-button.active {
     transition: .35s ease;
     transform: rotate(-90deg) translateY(-15vw);
 }
