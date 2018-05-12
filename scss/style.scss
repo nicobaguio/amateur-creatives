@@ -15,6 +15,20 @@ body {
   overflow-x: hidden;
 }
 
+@import "./_include-media.scss";
+
+// breakpoint definitions
+$breakpoints: (
+    'small-phone': 320px,
+    'big-phone': 500px,
+    'tablet': 720px,
+    'laptop': 1280px,
+) !default;
+
+
+// color defitions
+$ac-gold: #fafed8;
+
 .primary-menu-button {
   font-family: 'din-2014';
   font-size: 1.25em;
