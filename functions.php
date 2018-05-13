@@ -8,7 +8,7 @@ function my_scripts() {
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', $in_footer=true);
 };
 
-add_action( 'wp_head', 'my_scripts');
+add_action( 'wp_footer', 'my_scripts');
 
 function my_styles() {
 	wp_enqueue_style( 'style', get_stylesheet_uri());
@@ -17,7 +17,7 @@ function my_styles() {
 	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.10/css/all.css');
 };
 
-add_action( 'wp_head', 'my_styles');
+add_action( 'wp_footer', 'my_styles');
 
 if (function_exists( 'register_sidebar' )) {
 function ac_home_widgets() {
