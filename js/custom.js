@@ -29,16 +29,4 @@ $(document).ready( function() {
 		$('#primary-menu').toggleClass('reveal');
 		$('#page-overlay').toggleClass('reveal');
 	});
-
-	$("body").on('swipeleft', function() {
-		$('#primary-menu').addClass('reveal');
-		$('#page-overlay').addClass('reveal');
-		$('#primary-menu-button').addClass('active');
-	});
-
-	$("body").on('swiperight', function() {
-		$('#primary-menu').removeClass('reveal');
-		$('#page-overlay').removeClass('reveal');
-		$('#primary-menu-button').removeClass('active');
-	});
 });
