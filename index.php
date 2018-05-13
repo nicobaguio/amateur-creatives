@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <div class="row" id="hero">
 	<div class="col-sm-1 col-lg-2"></div>
-	<div class="col-sm-3 col-lg-3 hero-image"><img src="<?php bloginfo('template_directory'); ?>/images/homepage_headshot.png" id="headshot"></div>
-	<div class="col-sm-5 col-lg-5 hero-intro">
+	<div class="col-sm-4 col-lg-3" id="hero-image"><img src="<?php bloginfo('template_directory'); ?>/images/homepage_headshot.png" id="headshot"></div>
+	<div class="col-sm-6 col-lg-5" id="hero-intro">
 			<div class="index-intro">
 				<p>Hi, my name is Pam</p>
 				<p>and I'm <span class="typed styled-name"></span></p>

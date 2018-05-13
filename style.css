@@ -180,11 +180,7 @@ div#page-overlay.reveal {
     background-color: whitesmoke;
 }
 
-div.header-logo {
-    margin-top: -150px;
-}
-
-img.header-logo {
+#header-logo {
     height: 220px;
     margin-top: -150px;
     margin-right: auto;
