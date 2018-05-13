@@ -11,8 +11,8 @@ var typed = new Typed(".typed", {
 
 
 $(window).ready(function() {
-	viewport_height = $(window).width();
-	if (viewport_height <= 425) {
+	vw_width = $(window).width();
+	if (vw_width <= 576) {
 		$(".card-deck").addClass('main-carousel').removeClass('card-deck')	
 		$(".card").addClass('carousel-cell')
 		$(".main-carousel").flickity({
