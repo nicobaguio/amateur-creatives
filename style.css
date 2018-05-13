@@ -24,9 +24,9 @@ body {
     font-weight: 600;
 
     position: sticky;
-    left: 63vw;
+    left: 100%;
 
-    height: 12vw;
+    height: 50px;
 
     transition: .35s ease;
     -webkit-transform: rotate(-90deg) translateY(0vw);
@@ -34,7 +34,7 @@ body {
     -ms-transform: rotate(-90deg) translateY(0vw);
     -o-transform: rotate(-90deg) translateY(0vw);
     transform: rotate(-90deg) translateY(0vw);
-    transform-origin: 37% -100%;
+    transform-origin: 40% -65%;
     letter-spacing: 6px;
     text-transform: uppercase;
 
@@ -50,7 +50,7 @@ body {
 
 #primary-menu-button.active {
     transition: .35s ease;
-    transform: rotate(-90deg) translateY(-75vw);
+    transform: rotate(-90deg) translateY(-60vw);
 }
 
 #sticky-button {
@@ -97,7 +97,7 @@ input#s::placeholder {
     top: 0;
     left: 100%;
 
-    width: 75vw;
+    width: 60vw;
     height: 100%;
 
     transition: .35s ease;
@@ -142,7 +142,7 @@ div#primary-menu.reveal {
 
 #latest-blogpost {
     position: relative;
-    top: 40vh;
+    top: 55vh;
 }
 
 #latest-blogpost h3 {
@@ -162,8 +162,13 @@ div#primary-menu.reveal {
 #latest-blogpost .card {
     font-size: .75em;
 
-    width: 55%;
-    margin-left: 22.5%;
+    width: 80%;
+    margin-left: 10%;
+    max-height: 48vh;
+}
+
+#latest-blogpost .card-img {
+    max-height: 48vh;
 }
 
 div#page-overlay {
@@ -342,13 +347,12 @@ div.col-lg-2 {
 
 .index-intro {
     width: 100%;
-    margin-top: 45%;
 }
 
 .index-intro p {
     font-size: 1.25em;
     font-weight: 300;
-    line-height: 55px;
+    line-height: 20px;
     text-align: center;
     white-space: nowrap;
     letter-spacing: 0;
@@ -374,7 +378,7 @@ div.col-lg-2 {
 
 h2 {
     font-family: 'good-kitty'!important;
-
+    font-size: 1.75rem!important;
     width: 100%!important;
     padding-top: 55px!important;
     padding-bottom: 55px!important;
@@ -483,6 +487,10 @@ h5 {
     font-style: italic;
 
     color: #3a393f;
+}
+
+.homepage-left-wide {
+    padding: 0px 12vw;
 }
 
 .homepage-left-wide h5 {
