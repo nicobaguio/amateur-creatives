@@ -171,7 +171,7 @@ div#primary-menu.reveal {
     max-height: 48vh;
 }
 
-div#page-overlay {
+#page-overlay {
     position: fixed;
 
     visibility: hidden;
@@ -180,7 +180,7 @@ div#page-overlay {
     height: 100vh;
 }
 
-div#page-overlay.reveal {
+#page-overlay.reveal {
     z-index: 2;
 
     visibility: visible;
@@ -284,7 +284,7 @@ blockquote.blockquote {
     vertical-align: center;
 }
 
-blockquote.blockquote>p {
+blockquote.blockquote p {
     font-family: 'Lora', serif;
     font-size: 20pt;
     font-style: italic;
@@ -389,7 +389,7 @@ h2 {
     color: #ce4d52!important;
 }
 
-#latest-blogposts>p.styled-link {
+#latest-blogposts p.styled-link {
     font-family: 'din-2014';
     font-size: 1.5em;
     font-weight: 600;
@@ -401,7 +401,7 @@ h2 {
     text-transform: uppercase;
 }
 
-#latest-blogposts>p.styled-link>a {
+#latest-blogposts p.styled-link a {
     padding: 10px 13px;
 
     color: white;
@@ -570,7 +570,7 @@ input[type='submit'] {
     text-align: center;
 }
 
-.pre-footer-nav>li {
+.pre-footer-nav li {
     font-family: 'din-2014';
     font-size: 1.25em;
     font-weight: 600;
@@ -582,7 +582,7 @@ input[type='submit'] {
     color: #94c7c2;
 }
 
-.pre-footer-nav>li>a {
+.pre-footer-nav li a {
     color: #94c7c2;
 }
 
