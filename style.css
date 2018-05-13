@@ -380,9 +380,8 @@ h2 {
     font-family: 'good-kitty'!important;
     font-size: 1.75rem!important;
     width: 100%!important;
-    padding-top: 55px!important;
-    padding-bottom: 55px!important;
 
+    padding: 5vh 15vw;
     text-align: center!important;
     text-transform: uppercase!important;
 
@@ -525,14 +524,9 @@ h5 {
 
     border: none;
     border-bottom: 3px #f0db76 solid;
-}
 
-.homepage-left-wide input[type='text'] {
-    width: 25%;
-}
-
-.homepage-left-wide input[type='email'] {
-    width: 40%;
+    width: 12rem;
+    max-width: 80vw;
 }
 
 input[type='submit'] {
