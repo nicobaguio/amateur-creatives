@@ -24,7 +24,8 @@ $(window).ready(function() {
 });
 
 $(document).ready( function() {
-	$('#primary-menu-button').on('click', function () {
+	$('#primary-menu-button, #page-overlay').on('click', function () {
+		$('#primary-menu-button').toggleClass('active');
 		$('#primary-menu').toggleClass('reveal');
 		$('#page-overlay').toggleClass('reveal');
 	});

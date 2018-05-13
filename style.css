@@ -16,13 +16,13 @@ body {
 
 #primary-menu-button {
     font-family: 'din-2014';
-    font-size: 1.25em;
+    font-size: 1rem;
     font-weight: 600;
 
     position: sticky;
-    left: 100%;
+    left: 63vw;
 
-    height: 53px;
+    height: 12vw;
 
     transition: .35s ease;
     -webkit-transform: rotate(-90deg) translateY(0vw);
@@ -30,7 +30,7 @@ body {
     -ms-transform: rotate(-90deg) translateY(0vw);
     -o-transform: rotate(-90deg) translateY(0vw);
     transform: rotate(-90deg) translateY(0vw);
-    transform-origin: 60% -10%;
+    transform-origin: 37% -100%;
     letter-spacing: 6px;
     text-transform: uppercase;
 
@@ -46,21 +46,28 @@ body {
 
 #primary-menu-button.active {
     transition: .35s ease;
-    transform: rotate(-90deg) translateY(-15vw);
+    transform: rotate(-90deg) translateY(-75vw);
 }
 
-div.sticky-button {
+#sticky-button {
     position: sticky;
     z-index: 3;
-    top: 35vh;
+    top: 70vh;
     left: 100%;
+}
+
+#pm-search {
+    position: absolute;
+    top: 2vh;
+    left: 5vw;
+    width: 30vw;
 }
 
 input#s {
     font-family: 'din-2014';
-    font-size: .9em;
+    font-size: 1rem;
 
-    width: 13vw;
+    width: 65vw;
     padding-bottom: 5%;
 
     letter-spacing: 1px;
@@ -73,29 +80,20 @@ input#s {
 
 input#s::placeholder {
     font-family: 'din-2014';
-    font-size: 1.5em;
+    font-size: 1rem;
 
     letter-spacing: 1px;
 
     color: #fafed8;
 }
 
-
-div#pm-search {
-    position: absolute;
-    top: 5vh;
-    left: 1vw;
-
-    width: 12.5vw;
-}
-
-div#primary-menu {
+#primary-menu {
     position: fixed;
     z-index: 4;
     top: 0;
     left: 100%;
 
-    width: 15%;
+    width: 75vw;
     height: 100%;
 
     transition: .35s ease;
@@ -109,9 +107,9 @@ div#primary-menu.reveal {
     transform: translateX(-100%);
 }
 
-.main-menu {
+#main-menu {
     position: absolute;
-    top: 15vh;
+    top: 12vh;
     right: 1vw;
 }
 
@@ -120,7 +118,7 @@ div#primary-menu.reveal {
 }
 
 #menu-main-menu .menu-item {
-    margin: 35px 0;
+    margin: 0 4vw 5vh 0;
 
     text-align: right;
     letter-spacing: 2px;
@@ -128,7 +126,7 @@ div#primary-menu.reveal {
 
 #menu-main-menu .menu-item a {
     font-family: 'din-2014';
-    font-size: 1.1em;
+    font-size: 0.75em;
 
     padding: 10px;
 
@@ -145,7 +143,7 @@ div#primary-menu.reveal {
 
 #latest-blogpost h3 {
     font-family: 'din-2014';
-    font-size: 1.4em;
+    font-size: 1rem;
     font-weight: 600;
 
     text-align: center;
@@ -153,13 +151,15 @@ div#primary-menu.reveal {
     text-transform: uppercase;
 
     color: #fafed8;
+
+    margin-top: 5vh;
 }
 
-#latest-blogpost div.card {
+#latest-blogpost .card {
     font-size: .75em;
 
-    width: 80%;
-    margin-left: 10%;
+    width: 55%;
+    margin-left: 22.5%;
 }
 
 div#page-overlay {
@@ -326,7 +326,7 @@ div.col-lg-2 {
 }
 
 .typed,
-.index-intro>p {
+.index-intro p {
     font-family: 'din-2014';
 }
 
@@ -345,11 +345,11 @@ div.col-lg-2 {
     margin-top: 45%;
 }
 
-.index-intro>p {
-    font-size: 3em;
+.index-intro p {
+    font-size: 1.25em;
     font-weight: 300;
     line-height: 55px;
-
+    text-align: center;
     white-space: nowrap;
     letter-spacing: 0;
 }
@@ -421,7 +421,7 @@ h2 {
 
 .card-text {
     font-family: 'din-2014';
-    font-size: 1.5em;
+    font-size: 0.7rem;
     font-weight: 600;
 
     position: absolute;

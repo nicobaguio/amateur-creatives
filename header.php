@@ -17,8 +17,8 @@
 				<?php $logo = wp_get_attachment_image_src( $custom_logo_id, 'full'); ?>
 				<img  class="header-logo" src="<?php echo $logo[0] ?>">
 			</header>
-			<div class="sticky-button">
-				<button id="primary-menu-button" href="#primary-menu" role="button" onClick="$( this ).toggleClass('active')">
+			<div id="sticky-button">
+				<button id="primary-menu-button" href="#primary-menu" role="button"">
 					Explore
 				</button>
 			</div>
@@ -27,7 +27,7 @@
 				<div id="pm-search"><?php get_search_form(); ?></div>
 				<?php wp_nav_menu( array(
 					'menu' => 'main-menu',
-					'container_class' => 'main-menu',
+					'container_id' => 'main-menu',
 				) ); ?>
 				<div id="latest-blogpost">
 					<h3>Latest Blogpost</h3>
