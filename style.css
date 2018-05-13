@@ -627,6 +627,10 @@ input[type='submit'] {
     padding: 20px 0;
 }
 
+.navbar-brand {
+    margin-left: 4rem;
+}
+
 /* Apply dropdown card when it's a laptop*/
 @media (min-width: 1366px) {
     .card-img-overlay:hover div.overlay {
