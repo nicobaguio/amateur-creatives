@@ -12,6 +12,7 @@ Author URI: www.nicobaguio.com
 
 body {
     overflow-x: hidden;
+    font-size: 1vw!important;
 }
 
 .row {
