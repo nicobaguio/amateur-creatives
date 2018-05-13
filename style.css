@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+.row {
+    margin: 0!important;
+}
+
 #primary-menu-button {
     font-family: 'din-2014';
     font-size: 1rem;
