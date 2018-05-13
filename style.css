@@ -346,6 +346,7 @@ div.col-lg-2 {
 }
 
 .index-intro {
+    margin: 5vh 0;
     width: 100%;
 }
 
@@ -394,7 +395,7 @@ h2 {
     font-weight: 600;
 
     width: 100%;
-    margin: 75px 0;
+    margin: 10vh 5vw;
 
     text-align: center;
     text-transform: uppercase;
@@ -407,8 +408,8 @@ h2 {
     background-color: #e5725d;
 }
 
-.card {
-    width: 300px;
+#latest-blogposts .card {
+    width: 90vw;
     margin-right: 10px!important;
 
     border: none!important;
@@ -518,7 +519,7 @@ h5 {
     font-family: 'din-2014';
     font-size: .75em;
 
-    text-align: center;
+    text-align: left;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 
@@ -606,9 +607,7 @@ input[type='submit'] {
 
 .final-footer {
     overflow: hidden;
-
-    height: 55px;
-
+    max-height: 10vh;
     background-color: #ebb4ba;
 }
 
@@ -619,8 +618,8 @@ input[type='submit'] {
 
     width: auto;
     height: 100%;
-    margin: 15% auto 15%;
 
+    margin: 1vh 5vw auto;
     color: white;
 }
 
