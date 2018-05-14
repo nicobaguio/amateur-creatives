@@ -2,7 +2,7 @@
 		<div class="col-sm-1 col-lg-2"></div>
 		<div class="col-sm-10 col-lg-8">
 			<nav class="navbar navbar-expand-lg">
-				<p class="navbar-brand d-block d-sm-none">Go to...</p>
+				<p class="navbar-brand d-block d-lg-none">Go to...</p>
 				<button class="navbar-toggler align-center" type="button" data-toggle="collapse" data-target="#navlinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-chevron-circle-down"></i>
 				</button>
@@ -13,7 +13,6 @@
 						'container_class' => 'collapse navbar-collapse',
 						'container_id' => 'navlinks',
 						'fallback_cb' => false,
-						''
 					) ); ?>
 			</nav>
 			<?php dynamic_sidebar( 'pre-footer'); ?>
