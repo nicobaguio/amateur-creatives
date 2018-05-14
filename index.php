@@ -12,7 +12,7 @@
 <div class="row" id="latest-blogposts">
 	<h2 class="index-heading">Latest Blogposts</h2>
 	<div class="col-sm-1 col-lg-2"></div>
-	<div class="col-sm-10 col-lg-8">
+	<div class="col-11 col-lg-8">
 		<div class="card-deck">
 			<?php
 			// THEE QUERY!!!
@@ -50,16 +50,16 @@
 			<?php endif; ?>	
 		</div>
 	</div>
-	<div class="col-sm-1 col-lg-2"></div>
+	<div class="col-lg-2"></div>
 	<p class="styled-link"><a href="#">Check out out all my blogposts</a></p>
 </div>
 <div class="row" id="email-form-container">
 	<h2>Join the Amateur Creatives Club!</h2>
-	<div class="col-sm-1 col-lg-2"></div>
-	<div class="col-sm-6 col-lg-5">
+	<div class="col-lg-2"></div>
+	<div class="col-lg-5">
 		<?php dynamic_sidebar( 'homepage-left-wide' ); ?>
 	</div>
-	<div class="col-sm-5 col-lg-3">
+	<div class="col-lg-3">
 		<?php dynamic_sidebar( 'homepage-right' ); ?>
 	</div>
 	<div class="col-lg-2"></div>

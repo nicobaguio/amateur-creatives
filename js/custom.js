@@ -12,7 +12,7 @@ var typed = new Typed(".typed", {
 
 $(window).ready(function() {
 	vw_width = $(window).width();
-	if (vw_width <= 576) {
+	if (vw_width <= 992) {
 		$(".card-deck").addClass('main-carousel').removeClass('card-deck')	
 		$(".card").addClass('carousel-cell')
 		$(".main-carousel").flickity({
