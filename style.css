@@ -35,6 +35,10 @@ body {
     -ms-transform: rotate(-90deg) translateY(0vw);
     -o-transform: rotate(-90deg) translateY(0vw);
     transform: rotate(-90deg) translateY(0vw);
+    -webkit-transform-origin: 40% -65%;
+    -moz-transform-origin: 40% -65%;
+    -ms-transform-origin: 40% -65%;
+    -o-transform-origin: 40% -65%;
     transform-origin: 40% -65%;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -51,6 +55,11 @@ body {
 
 #primary-menu-button.active {
     transition: 0.375s ease;
+    -webkit-transform: rotate(-90deg) translateY(-60vw);
+    -moz-transform: rotate(-90deg) translateY(-60vw);
+    -ms-transform: rotate(-90deg) translateY(-60vw);
+    -o-transform: rotate(-90deg) translateY(-60vw);
+    -transform: rotate(-90deg) translateY(-60vw);
     transform: rotate(-90deg) translateY(-60vw);
 }
 
@@ -106,6 +115,10 @@ input#s::placeholder {
     height: 100%;
 
     transition: .35s ease;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
     transform: translateX(0%);
 
     background-color: #ce4d52;
@@ -113,6 +126,10 @@ input#s::placeholder {
 
 div#primary-menu.reveal {
     transition: .35s ease;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
@@ -733,6 +750,10 @@ input[type='submit'] {
     }
 
     #primary-menu-button.active {
+        -webkit-transform: rotate(-90deg) translateY(-260px);
+        -moz-transform: rotate(-90deg) translateY(-260px);
+        -ms-transform: rotate(-90deg) translateY(-260px);
+        -o-transform: rotate(-90deg) translateY(-260px);
         transform: rotate(-90deg) translateY(-260px);
     }
 
