@@ -415,7 +415,7 @@ h2 {
 }
 
 #latest-blogposts .card {
-    width: 90vw;
+    width: 90%;
     max-width: 300px;
     margin-right: 10px!important;
 
@@ -648,7 +648,7 @@ input[type='submit'] {
     font-weight: bold;
 }
 /* Apply dropdown card when it's a laptop*/
-@media (min-width: 1366px) {
+@media (min-width: 1280px) {
     .card-img-overlay:hover div.overlay {
         display: block;
     }
@@ -710,6 +710,10 @@ input[type='submit'] {
 @media (min-width: 334px) {
     .col-sm-10, .col-lg-8 {
         padding-right: 0px!important;
+    }
+
+    #latest-blogposts .card {
+        /*width: 90vw;*/
     }
 }
 
@@ -803,15 +807,24 @@ input[type='submit'] {
     }
 }
 
-@media (min-width: 768px) {
-    .index-intro p {
-        font-size: 5em;
-    }
-}
 
 @media (min-width: 700px) {
     input#s {
         width: 40vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .index-intro p {
+        font-size: 5em;
+    }
+
+    #latest-blogposts p.styled-link {
+        font-size: 4em;
+    }
+
+    #latest-blogposts .card-text {
+        font-size: 2em;
     }
 }
 
@@ -822,6 +835,18 @@ input[type='submit'] {
 
     .index-intro p {
         font-size: 4em;
+    }
+
+    h2 {
+        font-size: 7.5em !important;
+    }
+
+    #latest-blogposts .card-text {
+        font-size: 1.5em;
+    }
+
+    #latest-blogposts p.styled-link {
+        font-size: 3em;
     }
 }
 
@@ -834,5 +859,13 @@ input[type='submit'] {
     .index-intro p {
         white-space: nowrap;
         line-height: 72px;
+    }
+
+    h2 {
+        font-size: 80px!important;
+    }
+
+    #latest-blogposts p.styled-link {
+        font-size: 30px;
     }
 }
