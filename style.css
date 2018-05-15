@@ -870,6 +870,9 @@ input[type='submit'] {
         font-size: 4em;
     }
 
+    #latest-blogposts .card {
+        margin-right: 15px!important;
+    }
     #latest-blogposts .card-text {
         font-size: 2em;
     }
@@ -964,5 +967,18 @@ input[type='submit'] {
 
     .pre-footer-nav li {
         font-size: 16px;
+    }
+
+    #latest-blogposts .card {
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+
+}
+
+@media (min-width: 1463px) {
+    #latest-blogposts .card {
+        margin-left: auto!important;
+        margin-right: auto!important;
     }
 }
