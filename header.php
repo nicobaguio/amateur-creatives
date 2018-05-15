@@ -45,7 +45,7 @@
 								<?php $category_id = get_the_category()[0]->term_id; ?>
 								<?php $image_id = get_term_meta($category_id, 'image', true ) ?>
 								<?php $image_data = wp_get_attachment_image_src( $image_id, 'full' ); ?>
-									<div class="card">
+									<div class="card mx-auto">
 										<a href="<?php echo $url; ?>">
 											<img class="card-img" src="<?php echo $thumb; ?>">
 											<div class="card-img-overlay">
