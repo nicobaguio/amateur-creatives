@@ -59,9 +59,9 @@
 	<div class="col-lg-5">
 		<?php dynamic_sidebar( 'homepage-left-wide' ); ?>
 	</div>
-	<div class="col-lg-3">
+	<div class="col-lg-4">
 		<?php dynamic_sidebar( 'homepage-right' ); ?>
 	</div>
-	<div class="col-lg-2"></div>
+	<div class="col-lg-1"></div>
 </div>
 <?php get_footer(); ?>

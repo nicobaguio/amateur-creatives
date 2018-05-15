@@ -848,6 +848,25 @@ input[type='submit'] {
     #latest-blogposts p.styled-link {
         font-size: 3em;
     }
+
+    .homepage-left-wide h3 {
+        font-size: 3em;
+    }
+
+    .homepage-left-wide p {
+        font-size: 1.75em;
+    }
+
+    .homepage-left-wide input[type="text"],
+    .homepage-left-wide input[type="email"] {
+        font-size: 1.75em;
+        width: 30vw;
+        margin-right: 70vw;
+    }
+
+    .homepage-left-wide input[type="submit"] {
+        font-size: 2em;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -867,5 +886,24 @@ input[type='submit'] {
 
     #latest-blogposts p.styled-link {
         font-size: 30px;
+    }
+
+    .homepage-left-wide h3 {
+        font-size: 30px;
+    }
+
+    .homepage-left-wide p {
+        font-size: 16px;
+    }
+
+    .homepage-left-wide input[type="text"],
+    .homepage-left-wide input[type="email"],
+    .homepage-left-wide input[type="submit"] {
+        font-size: 16px;
+    }
+
+    .homepage-left-wide input[type="text"],
+    .homepage-left-wide input[type="email"] {
+        width: 300px;
     }
 }
