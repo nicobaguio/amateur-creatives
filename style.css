@@ -353,14 +353,14 @@ div.col-lg-2 {
 }
 
 .index-intro {
-    margin: 5vh 0;
+    margin: 1vh 0;
     width: 100%;
 }
 
 .index-intro p {
     font-size: 7em;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 10vw;
     text-align: center;
     letter-spacing: 0;
 }
@@ -728,8 +728,8 @@ input[type='submit'] {
 
     .index-intro {
         position: absolute;
-        bottom: 1vh;
-        /*top: 5vh;*/
+        /*bottom: 0vh;*/
+        top: 15vw;
         margin: 0;
     }
 
@@ -737,6 +737,7 @@ input[type='submit'] {
         font-size: 6em;
         text-align: left;
         white-space: pre-line;
+        line-height: 6vw;
     }
 
     #menu-main-menu .menu-item a {
@@ -802,8 +803,36 @@ input[type='submit'] {
     }
 }
 
+@media (min-width: 768px) {
+    .index-intro p {
+        font-size: 5em;
+    }
+}
+
 @media (min-width: 700px) {
     input#s {
         width: 40vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .index-intro {
+        top: 8vw;
+    }
+
+    .index-intro p {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .index-intro {
+        bottom: 1vw;
+        top: auto;
+    }
+
+    .index-intro p {
+        white-space: nowrap;
+        line-height: 72px;
     }
 }
