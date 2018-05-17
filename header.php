@@ -18,7 +18,7 @@
 				<img  id="header-logo" src="<?php echo $logo[0] ?>">
 			</header>
 			<div id="sticky-button">
-				<button id="primary-menu-button" href="#primary-menu" role="button"">
+				<button id="primary-menu-button" href="#primary-menu" role="button">
 					Explore
 				</button>
 			</div>
