@@ -15,9 +15,9 @@ body {
     font-size: 1vw!important;
 }
 
-div.container-fluid {
-    padding-right: 0;
-    padding-left: 0;
+.container-fluid {
+    padding-right: 0!important;
+    padding-left: 0!important;
 }
 
 .row {
@@ -231,7 +231,7 @@ div#primary-menu.reveal {
     height: auto;
 }
 
-div.banner {
+.banner {
     width: 100%;
     height: 270px;
 
@@ -241,7 +241,7 @@ div.banner {
 
 /* SINGLE BLOGPOST */
 
-div.blog-container {
+.blog-container {
     margin-right: 0;
     margin-left: 0;
     padding-top: 50px;
@@ -249,7 +249,7 @@ div.blog-container {
     padding-left: 0;
 }
 
-div.blog-title h1.title {
+.blog-title h1.title {
     font-family: 'Lora', serif;
     font-size: 12em;
     font-weight: bold;
@@ -259,25 +259,31 @@ div.blog-title h1.title {
     text-align: center;
 }
 
-div.metadata p {
-    font-family: 'Inconsolota', monospace;
+.metadata p {
+    font-family: 'din-2014';
+    font-weight: 600;
     font-size: 5em;
+    background-color: #E5725D;
 
     padding: 5px 10px;
 
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     text-transform: uppercase;
-
-    background-color: #d9d9d9;
 }
 
-div.blog-text {
+.metadata p a {
+    color: white;
+}
+
+
+
+.blog-text {
     margin-top: 60px;
     padding-right: 0;
     padding-left: 0;
 }
 
-div.blog-text p {
+.blog-text p {
     font-family: 'Lora', serif;
     font-size: 5em;
     line-height: 1.75em;
@@ -286,7 +292,7 @@ div.blog-text p {
     padding-left: 15%;
 }
 
-div.blog-text h2 {
+.blog-text h2 {
     width: 100%;
     padding-top: 30px;
     padding-right: 25%;
@@ -323,9 +329,8 @@ blockquote.blockquote p {
     letter-spacing: 1px;
 }
 
-img.alignleft {
-    float: left;
 
+img.alignleft, img.alignright {
     max-width: 50%;
     margin: 20px 20px 20px 0px;
     padding-right: 0;
@@ -334,8 +339,10 @@ img.alignleft {
 
 img.alignright {
     float: right;
+}
 
-    margin: 0 20px;
+img.alignleft {
+    float: left;
 }
 
 img.aligncenter {
@@ -498,7 +505,7 @@ h2 {
     transition: opacity .1s ease-out .15s;
 }
 
-div.overlay {
+.overlay {
     display: none;
 
     width: 100%;
@@ -667,11 +674,11 @@ input[type='submit'] {
 
 /* Apply dropdown card when it's a laptop*/
 @media (min-width: 1280px) {
-    .card-img-overlay:hover div.overlay {
+    .card-img-overlay:hover .overlay {
         display: block;
     }
 
-    .card-img-overlay:hover div.overlay p {
+    .card-img-overlay:hover .overlay p {
         font-family: 'Lora';
         font-size: 1.25em;
         line-height: 30px;
