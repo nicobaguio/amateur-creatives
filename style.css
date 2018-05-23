@@ -332,16 +332,17 @@ blockquote.blockquote p {
 
 img.alignleft, img.alignright {
     max-width: 50%;
-    margin: 20px 20px 20px 0px;
     padding-right: 0;
     padding-left: 0;
 }
 
 img.alignright {
+    margin: 20px 0px 20px 20px;
     float: right;
 }
 
 img.alignleft {
+    margin: 20px 20px 20px 0px;
     float: left;
 }
 
