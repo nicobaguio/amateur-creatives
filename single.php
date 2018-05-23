@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <div class="row blog-container">
-<div class="col-lg-2 clearfix">
+<div class="col-lg-1 clearfix">
 </div>
-<div class="col-lg-8 col-12 justify-content-center" id="blog-content">
+<div class="col-lg-10 col-12 justify-content-center" id="blog-content">
 		<div class="row d-flex justify-content-center metadata">
 			<p><a href="#">Category</a></p>
 		</div>
@@ -13,7 +13,7 @@
 			<?php the_content(); ?>
 		</div>
 </div>
-<div class="col-lg-2 clearfix">
+<div class="col-lg-1 clearfix">
 </div>
 </div>
 <?php get_footer(); ?>
