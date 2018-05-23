@@ -219,12 +219,16 @@ div#primary-menu.reveal {
     background-color: whitesmoke;
 }
 
-#header-logo {
-    height: 220px;
-    margin-top: -150px;
+#home-link {
     margin-right: auto;
     margin-left: auto;
 }
+
+#header-logo {
+    height: 220px;
+    margin-top: -150px;
+}
+
 
 #headshot {
     width: 100%;
