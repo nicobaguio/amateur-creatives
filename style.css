@@ -249,7 +249,7 @@ div#primary-menu.reveal {
     padding-left: 0;
 }
 
-.blog-title h1.title {
+#blog-title h1.title {
     font-family: 'Lora', serif;
     font-size: 12em;
     font-weight: bold;
