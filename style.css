@@ -841,6 +841,11 @@ input[type='submit'] {
         margin-right: 50vw;
     }
 
+    #blog-title h1.title {
+        font-size: 9em;
+    }
+}
+
 @media (min-width: 768px) {
     .index-intro p {
         font-size: 5em;
@@ -859,6 +864,10 @@ input[type='submit'] {
 
     .pre-footer-nav li {
         font-size: 2em;
+    }
+
+    #blog-title h1.title {
+        font-size: 7.5em;
     }
 }
 
@@ -904,6 +913,10 @@ input[type='submit'] {
 
     .pre-footer-nav li {
         font-size: 1.35em;
+    }
+
+    #blog-title h1.title {
+        font-size: 6em;
     }
 }
 
@@ -952,6 +965,10 @@ input[type='submit'] {
     #latest-blogposts .card {
         margin-left: auto!important;
         margin-right: auto!important;
+    }
+
+    #blog-title h1.title {
+        font-size: 60px;
     }
 
 }
