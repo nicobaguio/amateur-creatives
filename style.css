@@ -310,13 +310,13 @@ div#primary-menu.reveal {
     height: auto;
 }
 
-blockquote.blockquote {
+#blog-text blockquote {
     vertical-align: center;
 }
 
-blockquote.blockquote p {
+#blog-text blockquote p {
     font-family: 'Lora', serif;
-    font-size: 20pt;
+    font-size: 5em;
     font-style: italic;
     line-height: 25pt;
 
