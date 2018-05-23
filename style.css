@@ -315,7 +315,8 @@ div#primary-menu.reveal {
 }
 
 #blog-text blockquote p {
-    font-family: 'Lora', serif;
+    font-family: 'good-kitty', serif;
+    color: #CE4D52;
     font-size: 5em;
     font-style: italic;
     line-height: 25pt;
@@ -848,6 +849,10 @@ input[type='submit'] {
     .metadata p {
         font-size: 4.5em;
     }
+
+    #blog-text p {
+        font-size: 4em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -876,6 +881,14 @@ input[type='submit'] {
 
     .metadata p {
         font-size: 3.5em;
+    }
+
+    #blog-text p {
+        font-size: 3em;
+    }
+
+    #blog-text blockquote p {
+        font-size: 4em;
     }
 }
 
@@ -931,6 +944,13 @@ input[type='submit'] {
         font-size: 3em;
     }
 
+    #blog-text p {
+        font-size: 2em;
+    }
+
+    #blog-text blockquote p {
+        font-size: 3em;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -986,6 +1006,14 @@ input[type='submit'] {
 
     .metadata p {
         font-size: 25px;
+    }
+
+    #blog-text p {
+        font-size: 22px;
+    }
+
+    #blog-text blockquote p {
+        font-size: 30px;
     }
 }
 
