@@ -844,6 +844,10 @@ input[type='submit'] {
     #blog-title h1.title {
         font-size: 9em;
     }
+
+    .metadata p {
+        font-size: 4.5em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -868,6 +872,10 @@ input[type='submit'] {
 
     #blog-title h1.title {
         font-size: 7.5em;
+    }
+
+    .metadata p {
+        font-size: 3.5em;
     }
 }
 
@@ -918,6 +926,11 @@ input[type='submit'] {
     #blog-title h1.title {
         font-size: 6em;
     }
+
+    .metadata p {
+        font-size: 3em;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -971,6 +984,9 @@ input[type='submit'] {
         font-size: 60px;
     }
 
+    .metadata p {
+        font-size: 25px;
+    }
 }
 
 @media (min-width: 1463px) {
