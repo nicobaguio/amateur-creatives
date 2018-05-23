@@ -300,16 +300,6 @@ div#primary-menu.reveal {
     padding-left: 25%;
 }
 
-#blog-text img {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-right: 15%;
-    padding-left: 15%;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 #blog-text blockquote {
     vertical-align: center;
 }
@@ -322,39 +312,51 @@ div#primary-menu.reveal {
     line-height: 25pt;
 
     padding-top: 30px;
-    padding-right: 10%;
+    padding-right: 1%;
     padding-bottom: 30px;
-    padding-left: 10%;
+    padding-left: 1%;
 
     text-align: center;
     letter-spacing: 1px;
 }
 
 
-img.alignleft, img.alignright {
-    max-width: 50%;
-    padding-right: 0;
-    padding-left: 0;
+#blog-text img.alignleft, img.alignright {
+    max-width: 50%!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
 }
 
-img.alignright {
-    margin: 20px 0px 20px 20px;
-    float: right;
+#blog-text img.alignright {
+    margin: 20px 0px 20px 20px!important;
+    float: right!important;
 }
 
-img.alignleft {
-    margin: 20px 20px 20px 0px;
-    float: left;
+#blog-text img.alignleft {
+    margin: 20px 20px 20px 0px!important;
+    float: left!important;
 }
 
-img.aligncenter {
+#blog-text img.aligncenter {
     width: 100%!important;
-    height: 100%!important;
+    /*height: 100%!important;*/
     padding-right: 0;
     padding-left: 0;
 }
 
-.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-8, .col {
+#blog-text img.alignnone {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+#blog-text img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-8, .col, .col-12 {
     padding: 0px!important;
 }
 
@@ -794,11 +796,6 @@ input[type='submit'] {
     #main-menu {
         top: 80px;
         right: 4px;
-    }
-
-    #blog-text img.aligncenter {
-        padding-right: 5%;
-        padding-left: 5%;
     }
     
     #blog-text img.alignleft {
