@@ -11,8 +11,8 @@
 </div>
 <div class="row" id="latest-blogposts">
 	<h2 class="index-heading">Latest Blogposts</h2>
-	<div class="col-1 col-md-1 col-lg-2"></div>
-	<div class="col-11 col-md-10 col-lg-8">
+	<div class="col-1 col-lg-2"></div>
+	<div class="col-10 col-lg-8">
 		<div class="card-deck">
 			<?php
 			// THEE QUERY!!!
@@ -50,7 +50,7 @@
 			<?php endif; ?>	
 		</div>
 	</div>
-	<div class="col-md-1 col-lg-2"></div>
+	<div class="col-1 col-lg-2"></div>
 	<p class="styled-link"><a href="#">Check out out all my blogposts</a></p>
 </div>
 <div class="row" id="email-form-container">
