@@ -73,7 +73,7 @@ body {
 #sticky-button {
     position: sticky;
     z-index: 3;
-    top: 58vh;
+    top: 30vh;
     left: 100%;
 }
 
