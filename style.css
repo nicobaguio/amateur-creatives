@@ -289,8 +289,8 @@ div#primary-menu.reveal {
     background-image: url('./images/homepage_blog-bg.jpg');
 }
 
-h2 {
-    font-family: 'good-kitty'!important;
+h2.index-heading {
+    font-family: 'good-kitty' !important;
     font-size: 10em!important;
     width: 100%!important;
 
@@ -746,7 +746,7 @@ input[type='submit'] {
         font-size: 0.9vw!important;
     }
 
-    h2 {
+    h2.index-heading {
         font-size: 9em!important;
     }
 
@@ -904,7 +904,7 @@ input[type='submit'] {
         font-size: 4em;
     }
 
-    h2 {
+    h2.index-heading {
         font-size: 7.5em !important;
     }
 
@@ -967,7 +967,7 @@ input[type='submit'] {
         line-height: 72px;
     }
 
-    h2 {
+    h2.index-heading {
         font-size: 80px!important;
     }
 

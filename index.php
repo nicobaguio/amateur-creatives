@@ -54,7 +54,7 @@
 	<p class="styled-link"><a href="#">Check out out all my blogposts</a></p>
 </div>
 <div class="row" id="email-form-container">
-	<h2>Join the Amateur Creatives Club!</h2>
+	<h2 class="index-heading">Join the Amateur Creatives Club!</h2>
 	<div class="col-lg-2"></div>
 	<div class="col-lg-5">
 		<?php dynamic_sidebar( 'homepage-left-wide' ); ?>
