@@ -7,7 +7,7 @@
 				<p><a href="#">Category</a></p>
 			</div>
 			<div class="row justify-content-center" id="blog-title">
-				<h1 class="title mx-5"><?php the_title(); ?></h1>
+				<h1 class="title"><?php the_title(); ?></h1>
 			</div>
 			<div class="col" id="blog-text">
 				<?php the_content(); ?>
