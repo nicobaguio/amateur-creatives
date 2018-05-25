@@ -150,6 +150,10 @@ div#primary-menu.reveal {
     list-style: none;
 }
 
+#menu-main-menu li:first-child {
+    margin-top: 10px;
+}
+
 #menu-main-menu .menu-item {
     margin: 0 4vw 5vh 0;
 
@@ -885,10 +889,6 @@ input[type='submit'] {
 
     #menu-main-menu .menu-item {
         margin: 0 15px 35px 0;
-    }
-
-    #menu-main-menu li:first-child {
-        margin-top: 10px;
     }
 
     #pm-search {
