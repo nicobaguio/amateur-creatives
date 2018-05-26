@@ -1121,6 +1121,14 @@ input[type='submit'] {
         padding-left: 25%;
         padding-right: 25%;
     }
+
+    #blog-text img.alignright {
+        margin-right: calc(29.1666667vw - 300px)!important;
+    }
+
+    #blog-text img.alignleft {
+        margin-left: calc(29.1666667vw - 300px)!important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1177,6 +1185,15 @@ input[type='submit'] {
     #blog-text img.alignleft, img.alignright {
         max-width: 400px!important;
     }
+
+    #blog-text img.alignright {
+        margin-right: calc(29.1666667vw - 400px)!important;
+    }
+
+    #blog-text img.alignleft {
+        margin-left: calc(29.1666667vw - 400px)!important;
+    }
+
 }
 
 @media (min-width: 1463px) {
