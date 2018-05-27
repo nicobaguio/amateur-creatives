@@ -578,14 +578,16 @@ input[type='submit'] {
     padding-right: 15%;
 }
 
-#blog-content h1 {
+#blog-content h1,
+#page-content h1 {
     font-family: 'Lora', serif;
     font-weight: bold;
     font-size: 24px;
     color: #101318;
 }
 
-#blog-content h2 {
+#blog-content h2,
+#page-content h2 {
     font-family: 'din-2014';
     text-transform: uppercase;
     color: #CE4D52;
@@ -593,14 +595,16 @@ input[type='submit'] {
     font-size: 16px;
 }
 
-#blog-content h3 {
+#blog-content h3,
+#page-content h3 {
     font-family: 'din-2014';
     font-weight: bold;
     font-size: 22px;
     color: #101318;
 }
 
-#blog-content h4 {
+#blog-content h4,
+#page-content h4 {
     font-family: 'Lora', serif;
     font-style: italic;
     letter-spacing: -0.5px;
@@ -608,25 +612,30 @@ input[type='submit'] {
     color: #94C7C2;
 }
 
-#blog-content p {
+#blog-content p,
+#page-content p {
     font-family: 'Lora', serif;
     font-size: 16px;
     line-height: 28px;
+    color: black;
 }
 
-#blog-text a {
+#blog-text a,
+#page-text a {
     border-bottom: 1px #FEEB52 solid;
     color: black;
     padding-bottom: 3px;
 }
 
-#blog-text a:hover {
+#blog-text a:hover,
+#page-text a:hover {
     border-bottom: 1px #B6C2F2 solid;
     color: black;
     text-decoration: none;
 }
 
-#blog-text p span {
+#blog-text p span,
+#page-text p span {
     text-decoration: none!important;
     border-bottom: 1px black solid;
 }
@@ -636,7 +645,8 @@ input[type='submit'] {
     padding-left: 20%;
 }
 
-#blog-content ol li {
+#blog-content ol li,
+#page-content ol li {
     font-family: 'din-2014', serif;
     text-transform: uppercase;
     vertical-align: middle;
@@ -645,11 +655,13 @@ input[type='submit'] {
     letter-spacing: 2px;
 }
 
-#blog-content ol li:first-child {
+#blog-content ol li:first-child,
+#page-content ol li:first-child {
     counter-reset: index;
 }
 
-#blog-content ol li:before {
+#blog-content ol li:before,
+#page-content ol li:before {
   content: counter(index);
   counter-increment: index;
   width: 25px;
@@ -662,28 +674,53 @@ input[type='submit'] {
   margin-right: 10px;
 }
 
-#blog-content ol li:before {
+#blog-content ol li:before,
+#page-content ol li:before {
     color: white;
 }
 
-#blog-content ol li:nth-of-type(5n+1):before {
+#page-content ol {
+    list-style: none;
+}
+
+#page-content ol li {
+    list-style: none;
+}
+
+#blog-content ol li:nth-of-type(5n+1):before,
+#page-content ol li:nth-of-type(5n+1):before {
     background-color:#B6C2F2;
 }
 
-#blog-content ol li:nth-of-type(5n+2):before {
+#blog-content ol li:nth-of-type(5n+2):before,
+#page-content ol li:nth-of-type(5n+2):before {
     background-color:#FEEB52;
 }
 
-#blog-content ol li:nth-of-type(5n+3):before {
+#blog-content ol li:nth-of-type(5n+3):before,
+#page-content ol li:nth-of-type(5n+3):before {
     background-color:#FACAC0;
 }
 
-#blog-content ol li:nth-of-type(5n+4):before {
+#blog-content ol li:nth-of-type(5n+4):before,
+#page-content ol li:nth-of-type(5n+4):before {
     background-color:#CE4D52;
 }
 
-#blog-content ol li:nth-of-type(5n+5):before {
+#blog-content ol li:nth-of-type(5n+5):before,
+#page-content ol li:nth-of-type(5n+5):before {
     background-color:#94C7C2;
+}
+
+#page-content .title {
+    font-family: 'din-2014', san-serif;
+    font-size: 40px;
+    color: white;
+    background-color: #94C7C2;
+    padding: 0px 15px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blog-container {
@@ -719,7 +756,8 @@ input[type='submit'] {
     color: white;
 }
 
-#blog-text {
+#blog-text,
+#page-text {
     margin-top: 60px;
     padding-right: 0;
     padding-left: 0;
@@ -954,24 +992,28 @@ input[type='submit'] {
         padding-right: 7.5%;
     }
 
-    #blog-content h1 {
+    #blog-content h1,
+    #page-content h1 {
         font-size: 28px;
     }
 
-    #blog-content h2 {
+    #blog-content h2,
+    #page-content h2 {
         font-size: 18px;
     }
 
-    #blog-content h3 {
+    #blog-content h3,
+    #page-content h3 {
         font-size: 24px;
     }
 
-    #blog-content h4 {
+    #blog-content h4,
+    #page-content h4 {
         font-size: 20px;
     }
 
-    #blog-content p {
-        font-size: 14px;
+    #blog-content p,
+    #page-content p {
         line-height: 26px;
     }
 
