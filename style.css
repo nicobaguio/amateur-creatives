@@ -392,7 +392,10 @@ h2.index-heading {
     height: auto;
     margin-right: 40%;
     margin-left: 40%;
-
+    -webkit-transition: opacity .1s ease-out .15s;
+    -moz-transition: opacity .1s ease-out .15s;
+    -ms-transition: opacity .1s ease-out .15s;
+    -o-transition: opacity .1s ease-out .15s;
     transition: opacity .1s ease-out .15s;
 }
 
@@ -580,18 +583,19 @@ input[type='submit'] {
 
 #blog-content h1,
 #page-content h1 {
-    font-family: 'Lora', serif;
+    font-family: 'PMN Caecilia Pro 55 Roman', serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     color: #101318;
+    padding-top: 15px;
 }
 
 #blog-content h2,
 #page-content h2 {
     font-family: 'din-2014';
-    text-transform: uppercase;
+    line-height: 1.5;
     color: #CE4D52;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 16px;
 }
 
@@ -599,22 +603,24 @@ input[type='submit'] {
 #page-content h3 {
     font-family: 'din-2014';
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
     color: #101318;
+    padding-top: 15px;
 }
 
 #blog-content h4,
 #page-content h4 {
-    font-family: 'Lora', serif;
+    font-family: 'PMN Caecilia Pro 56 Italic', serif;
     font-style: italic;
     letter-spacing: -0.5px;
     font-size: 20px;
     color: #94C7C2;
+    margin-bottom: 1rem;
 }
 
 #blog-content p,
 #page-content p {
-    font-family: 'Lora', serif;
+    font-family: 'PMN Caecilia Pro 55 Roman', serif;
     font-size: 16px;
     line-height: 28px;
     color: black;
@@ -739,10 +745,37 @@ input[type='submit'] {
     text-align: center;
 }
 
+#blog-content .note-left,
+#blog-content .note-right {
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #B6C2F2, rgba(254,235,82,0.5)) 1 1%;
+    padding: 15px;
+    width: 90%;
+    margin: 10px 5%;
+}
+
+#blog-content .note-left span,
+#blog-content .note-right span {
+    font-family: 'PMN Caecilia Pro 55 Roman', serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #757575;
+    max-width: 300px;
+}
+
+#blog-content .note-left{
+    float: left;
+}
+
+#blog-content .note-right {
+    float:right;
+}
+
 .metadata span {
     font-family: 'din-2014';
     font-size: 11px;
-    background-color: #E5725D;
+    background-color: #FACAC0;
 
     padding: 7px;
 
@@ -751,11 +784,12 @@ input[type='submit'] {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
-.metadata span a {
-    color: white;
+.metadata span a,
+.metadata span a:not([href]):not([tabindex]) {
+    color: #D5838C;
 }
 
 #blog-text,
@@ -996,7 +1030,7 @@ input[type='submit'] {
 
     #blog-content h1,
     #page-content h1 {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     #blog-content h2,
@@ -1004,19 +1038,9 @@ input[type='submit'] {
         font-size: 18px;
     }
 
-    #blog-content h3,
-    #page-content h3 {
-        font-size: 24px;
-    }
-
     #blog-content h4,
     #page-content h4 {
         font-size: 20px;
-    }
-
-    #blog-content p,
-    #page-content p {
-        line-height: 26px;
     }
 
     #blog-text blockquote p {
@@ -1027,6 +1051,17 @@ input[type='submit'] {
 
     .metadata span {
         font-size: 12px;
+    }
+
+    #blog-content .note-left,
+    #blog-content .note-right {
+        max-width: 300px;
+        width: 40vw;
+    }
+
+    #blog-content .note-left,
+    #blog-content .note-right {
+        margin: 2px 20px!important;
     }
 }
 
@@ -1173,6 +1208,16 @@ input[type='submit'] {
     #blog-text img.alignleft {
         margin-left: calc(29.1666667vw - 300px)!important;
     }
+
+    #blog-content .note-left {
+        margin: 5px 20px 5px auto!important;
+        margin-left: calc(29.1666667vw - 300px)!important;
+    }
+
+    #blog-content .note-right {
+        margin: 5px auto 5px 20px !important;
+        margin-right: calc(29.1666667vw - 300px)!important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1185,6 +1230,9 @@ input[type='submit'] {
         font-size: 60px;
     }
 
+    #blog-content h3, #page-content h3 {
+        font-size: 30px;
+    }
     .index-intro p {
         white-space: nowrap;
         line-height: 72px;
