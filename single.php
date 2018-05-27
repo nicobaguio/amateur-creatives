@@ -4,7 +4,7 @@
 	</div>
 	<div class="col-lg-10 col-12 justify-content-center" id="blog-content">
 			<div class="row d-flex justify-content-center metadata">
-				<span><a href="#">Category</a></span>
+				<span><a>Category</a></span>
 			</div>
 			<div class="row justify-content-center" id="blog-title">
 				<h1 class="title"><?php the_title(); ?></h1>
