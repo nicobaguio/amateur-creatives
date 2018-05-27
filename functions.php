@@ -85,6 +85,15 @@ function filter_ptags_on_images($content) {
 
 add_filter('the_content', 'filter_ptags_on_images');
 
+function ac_custom_styling( $atts, $content = null ) {
+	if ( isset ( $atts['style'] ) ) {
+		return "<div class='{$atts['style']}'><span>$content</span></div>";
+		// return "<hr class='border {$atts['style']}'/>";
+	}
+};
+
+add_shortcode('ac_tag', ac_custom_styling);
+
 add_action( 'init', 'ac_nav_menus' );
 add_action( 'widgets_init', 'ac_home_widgets');
 add_theme_support( 'post-thumbnails' );
