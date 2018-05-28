@@ -92,7 +92,7 @@ function ac_custom_styling( $atts, $content = null ) {
 	}
 };
 
-add_shortcode('ac_tag', ac_custom_styling);
+add_shortcode('ac_tag', 'ac_custom_styling');
 
 add_action( 'init', 'ac_nav_menus' );
 add_action( 'widgets_init', 'ac_home_widgets');
