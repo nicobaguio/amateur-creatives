@@ -36,6 +36,10 @@ body {
 
     height: 50px;
 
+    -webkit-transition: 0.325s ease;
+    -moz-transition: 0.325s ease;
+    -ms-transition: 0.325s ease;
+    -o-transition: 0.325s ease;
     transition: 0.325s ease;
     -webkit-transform: rotate(-90deg) translateY(0vw);
     -moz-transform: rotate(-90deg) translateY(0vw);
@@ -61,12 +65,15 @@ body {
 }
 
 #primary-menu-button.active {
+    -webkit-transition: 0.375s ease;
+    -moz-transition: 0.375s ease;
+    -ms-transition: 0.375s ease;
+    -o-transition: 0.375s ease;
     transition: 0.375s ease;
     -webkit-transform: rotate(-90deg) translateY(-60vw);
     -moz-transform: rotate(-90deg) translateY(-60vw);
     -ms-transform: rotate(-90deg) translateY(-60vw);
     -o-transform: rotate(-90deg) translateY(-60vw);
-    -transform: rotate(-90deg) translateY(-60vw);
     transform: rotate(-90deg) translateY(-60vw);
 }
 
@@ -121,6 +128,10 @@ input#s::placeholder {
     width: 60vw;
     height: 100%;
 
+    -webkit-transition: .35s ease;
+    -moz-transition: .35s ease;
+    -ms-transition: .35s ease;
+    -o-transition: .35s ease;
     transition: .35s ease;
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0%);
@@ -132,6 +143,10 @@ input#s::placeholder {
 }
 
 div#primary-menu.reveal {
+    -webkit-transition: .35s ease;
+    -moz-transition: .35s ease;
+    -ms-transition: .35s ease;
+    -o-transition: .35s ease;
     transition: .35s ease;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -253,6 +268,10 @@ div#primary-menu.reveal {
 }
 
 .typed-cursor {
+    -webkit-animation: blinker .75s linear infinite;
+    -moz-animation: blinker .75s linear infinite;
+    -ms-animation: blinker .75s linear infinite;
+    -o-animation: blinker .75s linear infinite;
     animation: blinker .75s linear infinite;
 }
 
@@ -354,6 +373,10 @@ h2.index-heading {
     padding-right: 5%;
     padding-left: 5%;
 
+    -webkit-transition: height .5s ease;
+    -moz-transition: height .5s ease;
+    -ms-transition: height .5s ease;
+    -o-transition: height .5s ease;
     transition: height .5s ease;
     text-align: center;
     letter-spacing: 1px;
@@ -375,8 +398,13 @@ h2.index-heading {
     position: absolute;
     right: 4%;
     left: 4%;
+    visibility: visible;
 
-    transition: opacity .1s ease .1s;
+    -webkit-transition: opacity .1s ease .1s , visibility 0.1s ease 0.2s;
+    -moz-transition: opacity .1s ease .1s , visibility 0.1s ease 0.2s;
+    -ms-transition: opacity .1s ease .1s , visibility 0.1s ease 0.2s;
+    -o-transition: opacity .1s ease .1s , visibility 0.1s ease 0.2s;
+    transition: opacity .1s ease .1s , visibility 0.1s ease 0.2s;
 }
 
 .card-img-overlay {
@@ -384,19 +412,20 @@ h2.index-heading {
 }
 
 .category-icon {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top: 57.5%;
+    bottom: 29%;
 
+    visibility: visible;
     width: 20%;
     height: auto;
     margin-right: 40%;
     margin-left: 40%;
-    -webkit-transition: opacity .1s ease-out .15s;
-    -moz-transition: opacity .1s ease-out .15s;
-    -ms-transition: opacity .1s ease-out .15s;
-    -o-transition: opacity .1s ease-out .15s;
-    transition: opacity .1s ease-out .15s;
+    -webkit-transition: opacity .1s ease-out .15s, visibility 0.1s ease 0.25s;
+    -moz-transition: opacity .1s ease-out .15s, visibility 0.1s ease 0.25s;
+    -ms-transition: opacity .1s ease-out .15s, visibility 0.1s ease 0.25s;
+    -o-transition: opacity .1s ease-out .15s, visibility 0.1s ease 0.25s;
+    transition: opacity .1s ease-out .15s, visibility 0.1s ease 0.25s;
 }
 
 .overlay {
@@ -480,6 +509,10 @@ input[type='submit'] {
 .read-this {
     visibility: hidden;
 
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
     transition: opacity .5s ease;
 
     opacity: 0;
@@ -882,12 +915,16 @@ input[type='submit'] {
 
         color: #101318;
     }
-    .card-img-overlay:hover .category-icon {
-        top: -42.5%;
 
-        transition: opacity .2s ease;
+    .card-img-overlay:hover .category-icon {
+        -webkit-transition:  opacity .2s ease, visibility 0.2s ease;
+        -moz-transition:  opacity .2s ease, visibility 0.2s ease;
+        -ms-transition:  opacity .2s ease, visibility 0.2s ease;
+        -o-transition:  opacity .2s ease, visibility 0.2s ease;
+        transition: opacity .2s ease, visibility 0.2s ease;
 
         opacity: 0;
+        visibility: hidden;
     }
 
     .card-img-overlay:hover p.card-text {
@@ -897,6 +934,7 @@ input[type='submit'] {
 
     .card-img-overlay:hover p.card-text span.title {
         opacity: 0;
+        visibility: hidden;
     }
 
     .card-img-overlay:hover p.card-text span.read-this {
