@@ -8,7 +8,6 @@ Author URI: www.nicobaguio.com
 */
 
 @import url('https://use.typekit.net/vud4jjs.css');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
 
 body {
     overflow-x: hidden;
@@ -27,7 +26,7 @@ body {
 /* INDEX */
 
 #primary-menu-button {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 18px;
     font-weight: 600;
 
@@ -96,7 +95,7 @@ body {
 }
 
 input#s {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 1.25em;
 
     width: 50vw;
@@ -111,7 +110,7 @@ input#s {
 }
 
 input#s::placeholder {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 20px;
 
     letter-spacing: 1px;
@@ -177,7 +176,7 @@ div#primary-menu.reveal {
 }
 
 #menu-main-menu .menu-item a {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 5em;
 
     padding: 10px;
@@ -195,7 +194,7 @@ div#primary-menu.reveal {
 }
 
 #latest-blogpost h3 {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 6.5em;
     font-weight: 600;
 
@@ -264,7 +263,7 @@ div#primary-menu.reveal {
 
 .typed,
 .index-intro p {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
 }
 
 .typed-cursor {
@@ -313,7 +312,7 @@ div#primary-menu.reveal {
 }
 
 h2.index-heading {
-    font-family: 'good-kitty' !important;
+    font-family: 'good-kitty', sans-serif;
     font-size: 10em!important;
     width: 100%!important;
 
@@ -325,7 +324,7 @@ h2.index-heading {
 }
 
 #latest-blogposts p.styled-link {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 5em;
     font-weight: 600;
 
@@ -360,7 +359,7 @@ h2.index-heading {
 }
 
 .card-text {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-weight: 600;
 
     position: absolute;
@@ -439,7 +438,7 @@ h2.index-heading {
 }
 
 h5 {
-    font-family: 'Lora'!important;
+    font-family: 'PMN Caecilia Pro 55 Roman', serif;
     font-style: italic;
 
     color: #3a393f;
@@ -458,7 +457,7 @@ h5 {
 }
 
 .homepage-left-wide h3 {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 6em;
     font-weight: 700;
 
@@ -466,13 +465,13 @@ h5 {
 }
 
 .homepage-left-wide p {
-    font-family: 'Lora';
+    font-family: 'PMN Caecilia Pro 55 Roman', serif;
     font-size: 4.5em;
 }
 
 .homepage-left-wide input[type='text'],
 .homepage-left-wide input[type='email'] {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 4em;
 
     line-height: 40px;
@@ -487,7 +486,7 @@ h5 {
 }
 
 input[type='submit'] {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 5em;
     font-weight: 700;
 
@@ -531,7 +530,7 @@ input[type='submit'] {
 }
 
 .pre-footer-nav li {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 4.5em;
     font-weight: 600;
 
@@ -547,7 +546,7 @@ input[type='submit'] {
 }
 
 .navbar-brand {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-weight: 300;
 
     margin: 0;
@@ -578,7 +577,7 @@ input[type='submit'] {
 }
 
 .final-footer p {
-    font-family: 'Lora', serif;
+    font-family: 'PMN Caecilia Pro 55 Roman', serif;
     font-size: 12px;
     font-style: italic;
 
@@ -625,7 +624,7 @@ input[type='submit'] {
 
 #blog-content h2,
 #page-content h2 {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     line-height: 1.5;
     color: #CE4D52;
     letter-spacing: 1px;
@@ -634,7 +633,7 @@ input[type='submit'] {
 
 #blog-content h3,
 #page-content h3 {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-weight: bold;
     font-size: 25px;
     color: #101318;
@@ -752,7 +751,7 @@ input[type='submit'] {
 }
 
 #page-content .title {
-    font-family: 'din-2014', san-serif;
+    font-family: 'din-2014', sans-serif;
     font-size: 40px;
     color: white;
     background-color: #94C7C2;
@@ -806,7 +805,7 @@ input[type='submit'] {
 }
 
 .metadata span {
-    font-family: 'din-2014';
+    font-family: 'din-2014', sans-serif;
     font-size: 11px;
     background-color: #FACAC0;
 
@@ -903,7 +902,7 @@ input[type='submit'] {
     }
 
     .card-img-overlay:hover .overlay p {
-        font-family: 'Lora';
+        font-family: 'PMN Caecilia Pro 55 Roman', serif;
         font-size: 1.25em;
         line-height: 30px;
 
