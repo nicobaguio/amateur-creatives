@@ -6,6 +6,10 @@ function my_scripts() {
 	wp_enqueue_script( 'typed-js', 'https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js', $in_footer=true);
 	wp_enqueue_script( 'flickity-js', 'https://unpkg.com/flickity@2.1.1/dist/flickity.pkgd.min.js', $in_footer=true);
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', $in_footer=true);
+
+	if (is_home()) {
+		wp_enqueue_script( 'custom-typed-js', get_template_directory_uri() . '/js/typed-custom.js', $in_footer=true);
+	}
 };
 
 add_action( 'wp_footer', 'my_scripts');

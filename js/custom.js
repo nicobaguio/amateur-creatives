@@ -1,15 +1,3 @@
-var typed = new Typed(".typed", {
-	strings: [
-		"an art explorer. ",
-		"a memory-keeper. ",
-		"a digital designer. ",
-		"an aspiring teacher. ",
-		"an amateur creative. "
-	],
-	typeSpeed: 48,
-});
-
-
 $(window).ready(function() {
 	vw_width = $(window).width();
 	if (vw_width <= 767.99) {
