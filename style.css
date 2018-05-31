@@ -30,6 +30,7 @@ body {
     font-size: 18px;
     font-weight: 600;
 
+    position: -webkit-sticky;
     position: sticky;
     left: 100%;
 
@@ -77,6 +78,7 @@ body {
 }
 
 #sticky-button {
+    position: -webkit-sticky;
     position: sticky;
     z-index: 3;
     top: 30vh;
