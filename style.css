@@ -308,7 +308,7 @@ div#primary-menu.reveal {
     margin-right: 0!important;
     margin-left: 0!important;
 
-    background-image: url('./images/homepage_blog-bg.jpg');
+    /*background-image: url('./images/homepage_blog-bg.jpg');*/
 }
 
 h2.index-heading {
@@ -615,8 +615,7 @@ input[type='submit'] {
 
 #blog-content h1,
 #page-content h1 {
-    font-family: 'PMN Caecilia Pro 55 Roman', serif;
-    font-weight: bold;
+    font-family: 'PMNCaecilia', serif;
     font-size: 30px;
     color: #101318;
     padding-top: 15px;
@@ -624,25 +623,25 @@ input[type='submit'] {
 
 #blog-content h2,
 #page-content h2 {
-    font-family: 'din-2014', sans-serif;
+    font-family: 'Realtime-Semibold', sans-serif;
     line-height: 1.5;
     color: #CE4D52;
-    letter-spacing: 1px;
     font-size: 16px;
 }
 
 #blog-content h3,
 #page-content h3 {
-    font-family: 'din-2014', sans-serif;
+    font-family: 'Realtime-Semibold', sans-serif;
     font-weight: bold;
     font-size: 25px;
     color: #101318;
     padding-top: 15px;
+    letter-spacing: -1px;
 }
 
 #blog-content h4,
 #page-content h4 {
-    font-family: 'PMN Caecilia Pro 56 Italic', serif;
+    font-family: 'PMNCaecilia', serif;
     font-style: italic;
     letter-spacing: -0.5px;
     font-size: 20px;
@@ -652,7 +651,7 @@ input[type='submit'] {
 
 #blog-content p,
 #page-content p {
-    font-family: 'PMN Caecilia Pro 55 Roman', serif;
+    font-family: 'PMNCaecilia', serif;
     font-size: 16px;
     line-height: 28px;
     color: black;
@@ -770,7 +769,7 @@ input[type='submit'] {
 }
 
 #blog-title h1.title {
-    font-family: 'PMN Caecilia Pro 75 Bold', serif;
+    font-family: 'PMNCaecilia', serif;
     margin-top: 10px;
     font-size: 35px;
     margin-bottom: 10px;
@@ -779,7 +778,7 @@ input[type='submit'] {
 
 #blog-content .note-left,
 #blog-content .note-right {
-    border-width: 8px;
+    border-width: 3px;
     border-style: solid;
     border-image: linear-gradient(to right, #B6C2F2, rgba(254,235,82,0.5)) 1 1%;
     padding: 15px;
@@ -789,7 +788,8 @@ input[type='submit'] {
 
 #blog-content .note-left span,
 #blog-content .note-right span {
-    font-family: 'PMN Caecilia Pro 55 Roman', serif;
+    font-family: 'PMNCaecilia', serif;
+    font-style: italic;
     font-size: 14px;
     line-height: 24px;
     color: #757575;
@@ -805,7 +805,7 @@ input[type='submit'] {
 }
 
 .metadata span {
-    font-family: 'din-2014', sans-serif;
+    font-family: 'Realtime-Semibold', sans-serif;
     font-size: 11px;
     background-color: #FACAC0;
 

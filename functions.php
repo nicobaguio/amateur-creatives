@@ -5,9 +5,10 @@ function my_scripts() {
 	wp_enqueue_script( 'bootstrap4-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js', array('popper-js'), $in_footer=true);
 	wp_enqueue_script( 'typed-js', 'https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js', $in_footer=true);
 	wp_enqueue_script( 'flickity-js', 'https://unpkg.com/flickity@2.1.1/dist/flickity.pkgd.min.js', $in_footer=true);
+	wp_enqueue_script( 'ac-js', get_template_directory_uri() . '/js/amateur-creatives.js', $in_footer=true);
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', $in_footer=true);
 
-	if (is_home()) {
+	if (is_front_page()) {
 		wp_enqueue_script( 'custom-typed-js', get_template_directory_uri() . '/js/typed-custom.js', $in_footer=true);
 	}
 };

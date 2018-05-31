@@ -1,7 +1,9 @@
 <?php get_header(); ?>
+<?php $headshot = get_field('headshot') ?>
+<?php $latest_blogposts_bg = get_field('blogpost_bg') ?>
 <div class="row" id="hero">
 	<div class="col-sm-1 col-lg-2"></div>
-	<div class="col-sm-4 col-lg-3" id="hero-image"><img src="<?php bloginfo('template_directory'); ?>/images/homepage_headshot.png" id="headshot"></div>
+	<div class="col-sm-4 col-lg-3" id="hero-image"><img src="<?php echo $headshot['url'] ?>" id="headshot"></div>
 	<div class="col-sm-6 col-lg-5" id="hero-intro">
 			<div class="index-intro">
 				<p>Hi, my name is Pam<br class="d-xs-none"> and I'm <span class="typed styled-name"></span></p>
@@ -9,7 +11,7 @@
 	</div>
 	<div class="col-sm-1 col-lg-2"></div>
 </div>
-<div class="row" id="latest-blogposts">
+<div class="row" id="latest-blogposts" style="background-image: url(<?php echo $latest_blogposts_bg['url'] ?>)">
 	<h2 class="index-heading">Latest Blogposts</h2>
 	<div class="col-1 col-lg-2"></div>
 	<div class="col-10 col-lg-8">
