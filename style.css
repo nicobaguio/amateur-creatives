@@ -440,7 +440,7 @@ h2.index-heading {
 }
 
 h5 {
-    font-family: 'PMN Caecilia Pro 55 Roman', serif;
+    font-family: 'PMNCaecilia', serif;
     font-style: italic;
 
     color: #3a393f;
@@ -467,7 +467,7 @@ h5 {
 }
 
 .homepage-left-wide p {
-    font-family: 'PMN Caecilia Pro 55 Roman', serif;
+    font-family: 'PMNCaecilia', serif;
     font-size: 4.5em;
 }
 
@@ -579,7 +579,7 @@ input[type='submit'] {
 }
 
 .final-footer p {
-    font-family: 'PMN Caecilia Pro 55 Roman', serif;
+    font-family: 'PMNCaecilia', serif;
     font-size: 12px;
     font-style: italic;
 
@@ -629,6 +629,7 @@ input[type='submit'] {
     line-height: 1.5;
     color: #CE4D52;
     font-size: 16px;
+    padding-bottom: 5px;
 }
 
 #blog-content h3,
@@ -651,6 +652,11 @@ input[type='submit'] {
     margin-bottom: 1rem;
 }
 
+#blog-content h5,
+#page-content h5 {
+    font-family: 'PMNCaecilia', serif;
+}
+
 #blog-content p,
 #page-content p {
     font-family: 'PMNCaecilia', serif;
@@ -659,18 +665,28 @@ input[type='submit'] {
     color: black;
 }
 
+#blog-content p strong,
+#page-content p strong {
+    font-family: 'Realtime-Semibold', sans-serif;
+    font-weight: 600!important;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 #blog-text a,
 #page-text a {
-    border-bottom: 1px #FEEB52 solid;
+    box-shadow: 0 -7px 0 0 #FEEB52 inset;
+    -moz-box-shadow: 0 -7px 0 0 #FEEB52 inset;
+    background-color: transparent;
+    outline: 0 !important;
+    text-decoration: none;
     color: black;
-    padding-bottom: 3px;
 }
 
 #blog-text a:hover,
 #page-text a:hover {
-    border-bottom: 1px #B6C2F2 solid;
-    color: black;
-    text-decoration: none;
+    background-color: #FEEB52;
 }
 
 #blog-text p span,
@@ -686,12 +702,12 @@ input[type='submit'] {
 
 #blog-content ol li,
 #page-content ol li {
-    font-family: 'din-2014', serif;
+    font-family: 'Realtime-Semibold', sans-serif;
     text-transform: uppercase;
     vertical-align: middle;
     margin-bottom: 20px;
     font-size: 14px!important;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 #blog-content ol li:first-child,
@@ -778,8 +794,9 @@ input[type='submit'] {
     text-align: center;
 }
 
-#blog-content .note-left,
-#blog-content .note-right {
+.note-left,
+.note-right,
+.note-center {
     border-width: 3px;
     border-style: solid;
     border-image: linear-gradient(to right, #B6C2F2, rgba(254,235,82,0.5)) 1 1%;
@@ -788,8 +805,9 @@ input[type='submit'] {
     margin: 10px 5%;
 }
 
-#blog-content .note-left span,
-#blog-content .note-right span {
+.note-left span,
+.note-right span,
+.note-center span {
     font-family: 'PMNCaecilia', serif;
     font-style: italic;
     font-size: 14px;
@@ -798,11 +816,11 @@ input[type='submit'] {
     max-width: 300px;
 }
 
-#blog-content .note-left{
+.note-left{
     float: left;
 }
 
-#blog-content .note-right {
+.note-right {
     float:right;
 }
 
@@ -853,6 +871,7 @@ input[type='submit'] {
     letter-spacing: 1px;
 }
 
+/* IMAGE CONFIG */
 
 #blog-text img.alignleft, #blog-text img.alignright {
     width: 50%;
@@ -904,7 +923,7 @@ input[type='submit'] {
     }
 
     .card-img-overlay:hover .overlay p {
-        font-family: 'PMN Caecilia Pro 55 Roman', serif;
+        font-family: 'PMNCaecilia', serif;
         font-size: 1.25em;
         line-height: 30px;
 
@@ -1092,15 +1111,21 @@ input[type='submit'] {
         font-size: 12px;
     }
 
-    #blog-content .note-left,
-    #blog-content .note-right {
+    .note-left,
+    .note-right,
+    .note-center {
         max-width: 300px;
         width: 40vw;
     }
 
-    #blog-content .note-left,
-    #blog-content .note-right {
+    .note-left,
+    .note-right {
         margin: 2px 20px!important;
+    }
+
+    .note-center {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -1328,7 +1353,6 @@ input[type='submit'] {
     #blog-text img.alignleft {
         margin-left: calc(29.1666667vw - 400px)!important;
     }
-
 }
 
 @media (min-width: 1463px) {
