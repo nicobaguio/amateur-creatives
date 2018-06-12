@@ -11,12 +11,15 @@ Author URI: www.nicobaguio.com
 
 body {
     overflow-x: hidden;
+    overflow-y: scroll;
     font-size: 1vw!important;
 }
 
 .container-fluid {
     padding-right: 0!important;
     padding-left: 0!important;
+    top: 0;
+    visibility: visible;
 }
 
 .row {
@@ -261,6 +264,7 @@ div#primary-menu.reveal {
 
     background-repeat: no-repeat;
     background-position: center center;
+    border-bottom: 15px solid #bbbcd0;
 }
 
 .typed,
@@ -313,16 +317,12 @@ div#primary-menu.reveal {
     /*background-image: url('./images/homepage_blog-bg.jpg');*/
 }
 
-h2.index-heading {
-    font-family: 'good-kitty', sans-serif;
-    font-size: 10em!important;
-    width: 100%!important;
+.header-img {
+    padding-top: 30px;
+}
 
-    padding: 5vh 15vw;
-    text-align: center!important;
-    text-transform: uppercase!important;
-
-    color: #ce4d52!important;
+.image-container {
+    width: 100%;
 }
 
 #latest-blogposts p.styled-link {
@@ -672,6 +672,8 @@ input[type='submit'] {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 #blog-text a,
@@ -698,6 +700,7 @@ input[type='submit'] {
 #blog-content ol {
     list-style: none;
     padding-left: 20%;
+    padding-right: 20%;
 }
 
 #blog-content ol li,
@@ -794,6 +797,16 @@ input[type='submit'] {
     text-align: center;
 }
 
+hr {
+    height: 60px!important;
+    border: 0!important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .note-left,
 .note-right,
 .note-center {
@@ -856,10 +869,10 @@ input[type='submit'] {
 }
 
 #blog-text blockquote p {
-    font-family: 'good-kitty', serif;
+    font-family: 'PMNCaecilia', serif;
     color: #CE4D52;
     font-size: 18px;
-    font-style: italic;
+    /*font-style: italic;*/
     line-height: 25pt;
 
     padding-top: 30px;
@@ -899,6 +912,7 @@ input[type='submit'] {
 #blog-text img.alignnone {
     padding-right: 15%;
     padding-left: 15%;
+    width: 100%;
 }
 
 #blog-text img {
@@ -985,10 +999,6 @@ input[type='submit'] {
 @media (min-width: 401px) {
     body {
         font-size: 0.9vw!important;
-    }
-
-    h2.index-heading {
-        font-size: 9em!important;
     }
 
     #latest-blogpost h3 {
@@ -1102,7 +1112,7 @@ input[type='submit'] {
     }
 
     #blog-text blockquote p {
-        font-size: 20px;
+        font-size: 24px;
         padding-left: 7.5%;
         padding-right: 7.5%;
     }
@@ -1169,6 +1179,7 @@ input[type='submit'] {
 
     #blog-content ol {
         padding-left: 25%;
+        padding-right: 25%;
     }
 
     #blog-text blockquote p {
@@ -1186,6 +1197,14 @@ input[type='submit'] {
     }
 }
 
+@media (min-width: 800px) {
+    .header-img {
+        max-width: 800px!important;
+        margin-left: calc(50vw - 400px);
+        margin-right: calc(50vw - 400px);
+    }
+}
+
 @media (min-width: 992px) {
     .index-intro {
         top: 8vw;
@@ -1193,10 +1212,6 @@ input[type='submit'] {
 
     .index-intro p {
         font-size: 4em;
-    }
-
-    h2.index-heading {
-        font-size: 7.5em !important;
     }
 
     #latest-blogposts .card-text {
@@ -1254,6 +1269,7 @@ input[type='submit'] {
 
     #blog-content ol {
         padding-left: 30%;
+        padding-right: 30%;
     }
 
     .metadata span {
@@ -1286,7 +1302,7 @@ input[type='submit'] {
 
 @media (min-width: 1200px) {
     .index-intro {
-        bottom: 1vw;
+        bottom: 5vw;
         top: auto;
     }
 
@@ -1300,10 +1316,6 @@ input[type='submit'] {
     .index-intro p {
         white-space: nowrap;
         line-height: 72px;
-    }
-
-    h2.index-heading {
-        font-size: 80px!important;
     }
 
     #latest-blogposts p.styled-link {

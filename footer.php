@@ -20,7 +20,7 @@
 		<div class="col-sm-1 col-lg-2"></div>
 	</div>
 	<footer class="row final-footer">
-		<p class="text-center m-auto">&copy; AdobeXD Kit <?php echo date('Y'); ?>.<br>Designed by Crafted by Pam. Developed by Nico Baguio.</p>
+		<p class="text-center m-auto">&copy; Amateur Creatives <?php echo date('Y'); ?>.<br>Designed by Crafted by Pam. Developed by Nico Baguio.</p>
 	</footer>	
 </div>
 <?php wp_footer(); ?>

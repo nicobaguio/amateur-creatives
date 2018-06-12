@@ -2,13 +2,58 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8">
 		<title>
 			Amateur Creatives
 		</title>
 		<?php wp_head(); ?>
+		<style type="text/css">
+			#loader-container {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				z-index: 999999;
+				background-color: white;
+				-webkit-transition: height 1s ease-in-out;
+				-moz-transition: height 1s ease-in-out;
+				-ms-transition: height 1s ease-in-out;
+				-o-transition: height 1s ease-in-out;
+				transition: height 1s ease-in-out;
+				overflow: hidden;
+			}
+
+			#loader-container.loading {
+				height: 0;
+			}
+
+			#loader {
+				position: relative;
+				width: 300px;
+				height: auto;
+				top: calc(50vh - 150px);
+				left: calc(50vw - 150px);
+			}
+
+			body {
+				overflow: hidden;
+			}
+
+			.container-fluid.loading {
+				visibility: hidden;
+			}
+
+			hr {
+				background-image: url("<?php echo get_template_directory_uri() ?>/assets/divider.png");
+			}
+		</style>
 	</head>
 	<body id="blogpost">
-		<div class="container-fluid">
+		<div id="loader-container">
+			<img src="<?php echo get_template_directory_uri() ?>/assets/egg-preloader.gif" id="loader">
+		</div>
+		<div class="container-fluid loading">
 			<div id="page-overlay">
 			</div>
 			<header class="row header-container">
@@ -26,7 +71,7 @@
 			</div>
 
 			<div id="primary-menu">
-				<div id="pm-search"><?php get_search_form(); ?></div>
+				<!-- <div id="pm-search"><?php get_search_form(); ?></div> -->
 				<?php wp_nav_menu( array(
 					'menu' => 'main-menu',
 					'container_id' => 'main-menu',
@@ -52,7 +97,7 @@
 											<img class="card-img" src="<?php echo $thumb; ?>">
 											<div class="card-img-overlay">
 												<div class="overlay">
-													<p><?php echo $excerpt; ?></p>
+													<!-- <p><?php echo $excerpt; ?></p> -->
 												</div>
 												<p class="card-text">
 													<span class="title"><?php the_title(); ?></span>

@@ -8,7 +8,7 @@ function my_scripts() {
 	wp_enqueue_script( 'ac-js', get_template_directory_uri() . '/js/amateur-creatives.js', $in_footer=true);
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', $in_footer=true);
 
-	if (is_front_page()) {
+	if (is_front_page() or is_page('home')) {
 		wp_enqueue_script( 'custom-typed-js', get_template_directory_uri() . '/js/typed-custom.js', $in_footer=true);
 	}
 };

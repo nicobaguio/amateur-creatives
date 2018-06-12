@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 <?php $headshot = get_field('headshot') ?>
 <?php $latest_blogposts_bg = get_field('blogpost_bg') ?>
+<?php $latest_blogposts_img = get_field('latest_blogposts_img') ?>
+<?php $emailform_text_img = get_field('emailform_text_img') ?>
 <div class="row" id="hero">
 	<div class="col-sm-1 col-lg-2"></div>
 	<div class="col-sm-4 col-lg-3" id="hero-image"><img src="<?php echo $headshot['url'] ?>" id="headshot"></div>
@@ -12,7 +14,7 @@
 	<div class="col-sm-1 col-lg-2"></div>
 </div>
 <div class="row" id="latest-blogposts" style="background-image: url(<?php echo $latest_blogposts_bg['url'] ?>)">
-	<h2 class="index-heading">Latest Blogposts</h2>
+	<div class="image-container"><img class="img-fluid header-img" src="<?php echo $latest_blogposts_img['url'] ?>"></div>
 	<div class="col-1 col-lg-2"></div>
 	<div class="col-10 col-lg-8">
 		<div class="card-deck">
@@ -35,7 +37,7 @@
 								<img class="card-img" src="<?php echo $thumb; ?>">
 								<div class="card-img-overlay">
 									<div class="overlay">
-										<p><?php echo $excerpt; ?></p>
+										<!-- <p><?php echo $excerpt; ?></p> -->
 									</div>
 									<p class="card-text">
 										<span class="title"><?php the_title(); ?></span>
@@ -53,10 +55,12 @@
 		</div>
 	</div>
 	<div class="col-1 col-lg-2"></div>
-	<p class="styled-link"><a href="#">Check out out all my blogposts</a></p>
+	<p class="styled-link">
+		<!-- <a href="#">Check out out all my blogposts</a> -->
+	</p>
 </div>
 <div class="row" id="email-form-container">
-	<h2 class="index-heading">Join the Amateur Creatives Club!</h2>
+	<div class="image-container"><img class="img-fluid header-img" src="<?php echo $emailform_text_img['url'] ?>"></div>
 	<div class="col-lg-2"></div>
 	<div class="col-lg-5">
 		<?php dynamic_sidebar( 'homepage-left-wide' ); ?>
