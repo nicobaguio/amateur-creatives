@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 <?php $categories = get_the_category(); ?>
+<?php $thumb = get_field('horizontal_featured_img') ?>
+<?php $author = get_the_author(); ?>
 <div class="row blog-container">
 	<div class="col-lg-1 clearfix">
 	</div>
@@ -9,8 +11,10 @@
 			</div>
 			<div class="row justify-content-center" id="blog-title">
 				<h1 class="title"><?php the_title(); ?></h1>
+				<p id="author">by <span><?php echo $author ?></span></p>
 			</div>
 			<div class="col" id="blog-text">
+				<img class="aligncenter" src="<?php echo $thumb['url']; ?>">
 				<?php the_content(); ?>
 			</div>
 	</div>

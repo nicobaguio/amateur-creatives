@@ -22,9 +22,11 @@ $(document).ready( function() {
 });
 
 $(window).on('load', function() {
-	console.log('Loaded');
+	function loaded_page() {
 	$('#loader').addClass('loaded');
 	$('#loader-container').addClass('loading');
 	$('.container-fluid').removeClass('loading');
 	// $('#loader-container').addClass('loaded');
+	};
+	setTimeout(function() { loaded_page(); }, 5000);
 });
